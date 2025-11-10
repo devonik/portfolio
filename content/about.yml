@@ -1,0 +1,25 @@
+title: About Me
+description: Learn more about my journey as a full stack developer, my philosophy, and my passion for crafting intuitive digital experiences.
+content: |
+  Hello 👋 I'm a Senior Full Stack Developer since 01/2018 with a passion to improve User- and Developer experiences, solve problems and always improving oneself 📚
+  
+  ### My Philosophy
+
+  My philosophy is rooted in **understanding**, **analyzing** and **problem-solving**. I believe great development starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  <br><br>
+  I strive to create **clean, maintainable code** that not only meets current requirements but is also adaptable for future needs. I follow best practices and design patterns to ensure scalability and performance.
+
+  ### What Drives Me
+
+  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a idea to life and knowing it's making someone's digital interaction easier or more enjoyable.
+
+  ### Beyond the Screen
+
+  If I'm not in front of my laptop, I'm most likely travelling 🗺️⁀જ✈︎, scuba diving 🤿 or in a table tennis club 🏓
+  <br><br>
+  Thanks for stopping by. Feel free to browse my [projects](/projects) or get in touch if you'd like to collaborate!
+images:
+  - src: /about/indonesia-komodo-me.jpg
+    alt: Me traveling in Komodo, Indonesia
+  - src: /about/vietnam-hoi-an-group-pic.jpg
+    alt: Me playing table tennis in Hoi An, Vietnam
