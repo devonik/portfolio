@@ -23,7 +23,7 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Built with Nuxt UI • © 2025`,
+    credits: `Created by Niklas Grieger • © 2025`,
     colorMode: false,
     links: [{
       'icon': 'i-lucide-mail',
