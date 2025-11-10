@@ -27,6 +27,8 @@ if (!posts.value) {
       orientation="vertical"
       class="gap-4 lg:gap-y-4"
     >
+      Coming soon...
+      <!--
       <UBlogPost
         v-for="(post, index) in posts"
         :key="index"
@@ -55,7 +57,7 @@ if (!posts.value) {
             </template>
           </UButton>
         </template>
-      </UBlogPost>
+      </UBlogPost> -->
     </UBlogPosts>
   </UPageSection>
 </template>
