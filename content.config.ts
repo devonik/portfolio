@@ -1,4 +1,5 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { asOgImageCollection } from 'nuxt-og-image/content'
 
 const createBaseSchema = () => z.object({
   title: z.string(),
@@ -36,6 +37,12 @@ const createTestimonialSchema = () => z.object({
 
 export default defineContentConfig({
   collections: {
+    content: defineCollection(
+      asOgImageCollection({
+        type: 'page',
+        source: '**/*.md'
+      })
+    ),
     index: defineCollection({
       type: 'page',
       source: 'index.yml',

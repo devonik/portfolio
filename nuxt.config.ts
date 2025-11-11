@@ -16,8 +16,9 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
-    public: {
-      siteUrl: process.env.SITE_URL
+    site: {
+      url: process.env.NUXT_SITE_URL,
+      name: process.env.NUXT_SITE_NAME
     }
   },
 

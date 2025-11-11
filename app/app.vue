@@ -22,11 +22,9 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Niklas Grieger',
-  ogImage: `${config.public.siteUrl}/profile.jpg`,
-  twitterImage: `${config.public.siteUrl}/profile.jpg`,
-  twitterCard: 'summary_large_image'
+  titleTemplate: '%s - Niklas Grieger'
 })
+defineOgImage({ url: '/profile.jpg' })
 
 const [{ data: navigation }, { data: files }] = await Promise.all([
   useAsyncData('navigation', () => {
