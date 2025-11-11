@@ -21,7 +21,7 @@ hero:
       alt: Project Heiland Appointment Booking
     - src: /hero/project-pongmaster.jpeg
       alt: Project Pongmaster
-    - src: /hero/project-upljft-dinnebier.gif
+    - src: /hero/project-upljft-dinnebier.jpeg
       alt: Project Upljft Dinnerbier
     - src: /hero/project-upljft-enbw.jpeg
       alt: Project Upljft EnBW
@@ -103,12 +103,12 @@ faq:
             - Mobile development with React Native or Flutter
         - label: What is your tech stack?
           content: |
-            *Fontend:* VueJs, Nuxt, React, Native Javascript, TypeScript
-            *Backend:* Node.js (Express), Firebase, PHP (Laravel)
-            *Database:* PostgreSQL, MySQL, MongoDB, Firebase Firestore
-            *Cloud*: AWS (Lambda, Beanstalk, S3, Cloudformation), Firebase, Vercel
-            *DevOps: CI/CD (GitHub, Gitlab, Bitbucket), Docker*
-            *Mobile:* React Native, Flutter
+            - *Fontend:* VueJs, Nuxt, React, Native Javascript, TypeScript
+            - *Backend:* Node.js (Express), Firebase, PHP (Laravel)
+            - *Database:* PostgreSQL, MySQL, MongoDB, Firebase Firestore
+            - *Cloud*: AWS (Lambda, Beanstalk, S3, Cloudformation), Firebase, Vercel
+            - *DevOps: CI/CD (GitHub, Gitlab, Bitbucket), Docker*
+            - *Mobile:* React Native, Flutter
         - label: Do you work with startups?
           content: |
             Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.

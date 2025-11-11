@@ -155,7 +155,6 @@ defineProps<{
         </Motion>
       </div>
     </template>
-
     <UMarquee
       pause-on-hover
       class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
@@ -179,8 +178,7 @@ defineProps<{
         }"
       >
         <NuxtImg
-          height="234"
-          class="rounded-lg aspect-square object-contain"
+          class="rounded-lg aspect-square w-100 max-h-80 object-contain"
           :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
           v-bind="img"
         />
