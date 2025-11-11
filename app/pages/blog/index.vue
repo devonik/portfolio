@@ -45,8 +45,7 @@ useSeoMeta({
         container: '!pt-0'
       }"
     >
-      Coming soon...
-      <!-- <UBlogPosts orientation="vertical">
+      <UBlogPosts orientation="vertical">
         <Motion
           v-for="(post, index) in posts"
           :key="index"
@@ -71,7 +70,7 @@ useSeoMeta({
             }"
           />
         </Motion>
-      </UBlogPosts> -->
+      </UBlogPosts>
     </UPageSection>
   </UPage>
 </template>
