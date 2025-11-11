@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/nuxt'
 import { SpeedInsights } from '@vercel/speed-insights/nuxt'
 
 const colorMode = useColorMode()
+const config = useRuntimeConfig()
 
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
@@ -22,8 +23,8 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s - Niklas Grieger',
-  ogImage: '/banner.jpeg',
-  twitterImage: '/banner.jpeg',
+  ogImage: `${config.public.siteUrl}/banner.jpeg`,
+  twitterImage: `${config.public.siteUrl}/banner.jpeg`,
   twitterCard: 'summary_large_image'
 })
 
