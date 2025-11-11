@@ -23,8 +23,8 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s - Niklas Grieger',
-  ogImage: `${config.public.siteUrl}/banner.jpeg`,
-  twitterImage: `${config.public.siteUrl}/banner.jpeg`,
+  ogImage: `${config.public.siteUrl}/profile.jpg`,
+  twitterImage: `${config.public.siteUrl}/profile.jpg`,
   twitterCard: 'summary_large_image'
 })
 
