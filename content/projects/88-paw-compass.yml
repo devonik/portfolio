@@ -1,0 +1,10 @@
+title: Website for a perfect pet match
+description: 
+  This website helps people to find their perfect pet match. 
+  The main feature is a quiz with 10 important questions, such as the living situation, etc., to find a perfect match. 
+  We're supporting local shelters by showing their pets on the website.
+  I created this website with React and Next.js using HeroUI as a component library and TailwindCSS.
+image: /hero/project-paw-compass.gif
+tags: ["Full-Stack Dev"]
+date: "2025"
+url: "https://www.pawcompass.de/"

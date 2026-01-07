@@ -74,3 +74,44 @@ May I give it another try in the future
 ## Crawl4AI - my solution for now
 
 TBD...
+
+
+
+
+
+
+
+
+
+Hello,
+
+I have been working as a full-stack developer for 8 years, with a focus on frontend development. I have been working in frontend development for 7 years with VueJS versions 2 and 3 and have successfully migrated several projects to version 3, among other things.
+Furthermore, I also have extensive experience with NuxtJS 2/3 and nowadays Version 4. I have also used PrimeVue and Vuetify as component libraries.
+
+In the backend, I use NodeJs or Java Spring Boot. For databases, I have experience with PostgreSQL or NoSQL databases such as MongoDB. I have been working with AWS as my cloud provider for 6 years (primarily with Lambda, Beanstalk, EC2, S3, and more).
+I have set up CI/CD pipelines in Github, GitLab, and Bitbucket and have maintained and optimized existing ones.
+
+Furthermore, I have already supported many start-ups and have often been the lead developer, especially in the frontend.
+My biggest project was a B2B e-commerce shop for the veterinary industry, which I managed for over 4 years. This start-up began with a monolith project that used native JavaScript and NodeJs in the backend. I migrated the project to a microservice architecture and migrated existing frontends to Vue 3, as well as creating new microfrontends for various products. The Monolith Backend were extracted into multiple AWS Lamba functions or AWS Beankstalk services with the usage of Java Spring Boot.
+I developed NPM libraries in private scope to share Vue components and other JS functions across projects.
+
+You can find other examples of my work on my LinkedIn profile or on my website, https://devnik.dev.
+If you have any further questions, we can discuss them in a phone call. Please also feel free to check out my CV or one of my public NPM libraries, which have ~9500 downloads per month. You can also contact me directly at niklas.grieger@devnik.dev.
+
+I look forward to hearing from you. Best regards,
+Niklas Grieger
+
+
+
+I like projects where I am able to make a difference, my expertise is welcomed, and I can contribute to better user and developer experiences
+
+
+
+I'm working since 7 years with Vue, Nuxt, Vuetify and PrimeVue. I migrated 3 Vue2 projects to Vue3 incl. Nuxt and libraries like VueX -> Pinia and Vuetify. I am owner of the official certificates from certificates.dev. I used PrimeVue in my last 2 projects, and I'm working daily with TailwindCSS.
+
+In the Backend, I'm building my Rest API's with NodeJs or Java Spring Boot. My experience with Java Spring Boot is 4 years.
+
+
+
+https://github.com/devonik
+https://devnik.dev/

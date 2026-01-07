@@ -1,0 +1,11 @@
+title: Senior Full Stack Developer
+description: 
+  I supported L1R1 with their project for 3 months as a Senior Full Stack Developer. 
+  The Product offers the User an option to upload any kind of invoice. 
+  The Invoice will be scanned via OpenAI and fields were automatically detected. 
+  After some calculations, the User can upload the cleaned Invoice into a financial software as Billomat or InvoiceNinja. 
+  I used Vue3, Nuxt3 and NodeJs. 
+  I optimized some team processes as the branching strategy and I implemented a ESLint Config for better collaboration
+image: /hero/project-l1r1.gif
+tags: ["Full-Stack Dev"]
+date: "2025"

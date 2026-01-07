@@ -9,6 +9,12 @@ hero:
       to: /projects
       color: neutral
   images:
+    - src: /hero/project-ai-think.png
+      alt: Project AI Think
+    - src: /hero/project-rosypet.png
+      alt: Project Rosypet
+    - src: /hero/project-paw-compass.png
+      alt: Project PawCompass
     - src: /hero/project-gospendl.png
       alt: Project GoSpendl
     - src: /hero/project-blog.png

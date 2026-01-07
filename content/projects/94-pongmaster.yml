@@ -1,0 +1,6 @@
+title: React Native Developer
+description: Pong master is an App for the Outdoor Table tennis Community in Germany. This App is written in React Native, and I am supporting as a React Native developer. I redesigned the parts of the app and transferred Figma designs into the app. I redesigned the log in screen by implementing a background video, I redesigned the user review screen and I implemented new search functions for the map.
+image: /hero/project-pongmaster.gif
+tags: ["React Native Dev"]
+date: "2023"
+url: "https://www.pongmasters.app/"

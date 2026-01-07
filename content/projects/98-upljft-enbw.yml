@@ -1,0 +1,5 @@
+title: Lead full stack developer
+description: EnBW - the major German and European energy company that provides electricity, gas, and water to millions of customers. EnBW is launching every year the project "Macherbus" to sponsor charitable projects. The User can apply with its project and the winner project will be sponsored by EnBW. I build the frontend in Vue2, backend in Laravel and used AWS EC2 and Route53 for hosting.
+image: /hero/project-upljft-enbw.gif
+tags: ["Full-Stack Dev"]
+date: "2020"

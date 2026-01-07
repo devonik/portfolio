@@ -1,0 +1,10 @@
+title: Senior Full Stack Developer
+description: 
+  I am supporting AI Think with their project as a Senior full-stack developer. 
+  Their main product is the AI-VI Studio to let companies create their own AI video bots quickly and without heavy tech overhead.
+  My tasks include maintenance of the frontend and backend as well as new feature development. I built the plugin that can be used by the user to implement the AI Avatar Chat in any website, including WordPress.
+  Used technologies are Vue3, TailwindCSS, SignalIO, NodeJs (NestJs), and GitLab.
+image: /hero/project-ai-think.gif
+tags: ["Full-Stack Dev"]
+date: "2026"
+url: "https://app.ai-think.de/"

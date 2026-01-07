@@ -1,0 +1,9 @@
+title: Portal with features for veterinarians and pet owners
+description: 
+  This Portal brings digital features into the veterinarians business.
+  Features as Video Calls, Chat communication, Pet catalog and much more connects veterinarian and pet owner in a digital way.
+  Used Technologies are Vue3, TailwindCSS, PWA, SignalIO, OneSignal, NodeJs, and Gitlab.
+image: /hero/project-rosypet.gif
+tags: ["Full-Stack Dev"]
+date: "2025"
+url: "https://rosypet.com/"

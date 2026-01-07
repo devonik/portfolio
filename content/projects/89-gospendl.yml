@@ -1,0 +1,10 @@
+title: Website for price comparison within the bitcoin community
+description: 
+  This website shows diverse products that can be paid for with Bitcoin, offers Bitcoin discounts, or offers cashback in the form of bitcoins. 
+  As a search index, I am using Algolia, and the data is coming from 1,000+ different websites that include e-commerce, domain providers, E-SIM providers, and more.
+  I implemented Crawl4AI as a crawler since it offers the best flexibility for my case - read more about it in my Blog "Exploring AI-Driven Web Crawling - A Beginner’s Journey".
+  I created this website using Nuxt 4, Tailwind CSS, Node.js, Crawl4AI (Docker), and Algolia.
+image: /hero/project-gospendl.gif
+tags: ["Full-Stack Dev"]
+date: "2025"
+url: "https://gospendl.com/"

@@ -80,13 +80,14 @@ useSeoMeta({
         >
           <template #leading>
             <span class="text-sm text-muted">
-              {{ new Date(project.date).getFullYear() }}
+              {{ new Date(project.date).getUTCFullYear() }}
             </span>
           </template>
           <template #footer>
-            <ULink
+            <NuxtLink
               v-if="project.url"
               :to="project.url"
+              target="_blank"
               class="text-sm text-primary flex items-center"
             >
               View Project
@@ -94,7 +95,7 @@ useSeoMeta({
                 name="i-lucide-arrow-right"
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
               />
-            </ULink>
+            </NuxtLink>
           </template>
           <img
             :src="project.image"
