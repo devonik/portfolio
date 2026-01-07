@@ -3,7 +3,6 @@ import { Analytics } from '@vercel/analytics/nuxt'
 import { SpeedInsights } from '@vercel/speed-insights/nuxt'
 
 const colorMode = useColorMode()
-const config = useRuntimeConfig()
 
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
