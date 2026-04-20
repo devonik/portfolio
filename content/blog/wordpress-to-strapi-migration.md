@@ -1,6 +1,6 @@
 ---
-title: "Complete Wordpress migration to Strapi Headless CMS"
-description: I built a SaaS migration tool that can be used by anyone who wants to migrate without worrying about the WordPress post structure.
+title: "How to Migrate WordPress to Strapi Headless CMS (With 1,000+ Posts)"
+description: Step-by-step guide to migrating a WordPress site with 1,000+ posts and media to a Strapi headless CMS using a custom-built SaaS migration tool.
 date: 2026-03-06
 image: /blog/wordpress-to-strapi.png
 minRead: 8

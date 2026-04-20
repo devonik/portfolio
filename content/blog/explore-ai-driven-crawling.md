@@ -1,6 +1,6 @@
 ---
-title: "Exploring AI-Driven Web Crawling: A Beginner’s Journey"
-description: Follow my hands-on journey as I dive into the world of AI-powered web crawling. From understanding core concepts to testing real tools and building small experiments, this blog documents my discoveries, challenges, and insights while exploring how artificial intelligence is reshaping how we gather and analyze information online.
+title: "AI-Powered Web Crawling with Crawl4AI: A Practical Guide"
+description: Learn how to build AI-driven web crawlers using Crawl4AI. Covers core concepts, real tool comparisons, and hands-on experiments with practical code examples.
 date: 2025-11-14
 image: /blog/explore-ai-crawling/hero.png
 minRead: 3

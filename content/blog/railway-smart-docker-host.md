@@ -1,6 +1,6 @@
 ---
-title: "Railway: A smart and affordable way to host your Docker container within 5 minutes"
-description: You build your Docker container and want to host it in production? Then take a look at railway. You can get a machine with 8 GB RAM / 8 vCPU per service for just $5 per month and a 30-day trial.
+title: "Host Your Docker Container on Railway in 5 Minutes (8GB RAM for $5)"
+description: Deploy any Docker container to production on Railway in under 5 minutes. 8GB RAM, 8 vCPU per service, $5/month with a 30-day free trial — no DevOps needed.
 date: 2025-11-14
 image: /blog/railway.png
 minRead: 3

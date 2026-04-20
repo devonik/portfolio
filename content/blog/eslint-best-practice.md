@@ -1,6 +1,6 @@
 ---
-title: "Confused by ESLint & Prettier setups: You only need ESLint for formatting and linting."
-description: You want to see syntax and TypeScript errors before they happen in runtime? You want to format your code automatically with a given pattern? Then try this lightweight and easy-to-install ESLint starter template. Ready in 5 minutes. 
+title: "ESLint Without Prettier: One Tool for Formatting and Linting in TypeScript"
+description: Skip the Prettier setup. This lightweight ESLint config handles both formatting and linting for TypeScript projects — ready to install in 5 minutes.
 date: 2025-04-23
 image: /blog/eslint-best-practices-hero.png
 minRead: 8

@@ -1,8 +1,8 @@
 seo:
-  title: "Niklas Grieger - Software Engineer"
-  description: "Welcome to my portfolio! I'm Niklas Grieger, a passionate Software Engineer specializing in building efficient and scalable web applications. Explore my projects, experience, and get in touch!"
-title: "Hey, I'm Niklas Grieger Software Engineer"
-description: "I'm a passionate Software Engineer specializing in building efficient and scalable web applications. Explore my projects, experience, and get in touch!"
+  title: "Niklas Grieger - Senior Full Stack Developer | React · TypeScript · Node.js"
+  description: "Welcome to my portfolio! I'm Niklas Grieger, a passionate Senior Full Stack Developer specializing in building efficient and scalable web applications. Explore my projects, experience, and get in touch!"
+title: "Hey, I'm Niklas Grieger Senior Full Stack Developer"
+description: "I'm a passionate Senior Full Stack Developer specializing in building efficient and scalable web applications. Explore my projects, experience, and get in touch!"
 hero:
   links:
     - label: View My Work
@@ -36,31 +36,47 @@ hero:
 about:
   title: "About Me"
   description: |
-    As a full stack developer with focus frontend since 01/2018, I'm building applications from portfolios to complex web applications as a E-Commerce Shop's for B2B businesses or mobile apps with cross-frameworks React Native or Flutter.
+    As a Senior Full Stack Developer with a focus on frontend since 01/2018, I'm building applications from portfolios to complex web applications such as E-Commerce Shops for B2B businesses or mobile apps with cross-frameworks React Native or Flutter.
     My approach is centered around writing clean, maintainable code while ensuring optimal performance, user- and developer experience.
 experience:
   title: Work Experience
   items:
     - position: "Senior Full Stack Developer at"
+      date: "12 2025 — present"
+      company:
+        name: AIThink UG
+    - position: "Senior Full Stack Developer at"
+      date: "10 2025 — present"
+      company:
+        name: Rosypet
+    - position: "Senior Full Stack Developer at"
+      date: "02 2026 — 03 2026"
+      company:
+        name: AWARE7 GmbH
+    - position: "Senior Full Stack Developer at"
+      date: "05 2025 — 11 2025"
+      company:
+        name: GoSpendl
+    - position: "Senior Full Stack Developer at"
       date: "02 2025 — 04 2025"
       company:
         name: L1R1
         url: "https://l1r1.ai/"
-    - position: "Senior Vue.js Developer at"
-      date: "10 2024 — 01 2025"
+    - position: "Senior Full Stack Developer at"
+      date: "09 2024 — 01 2025"
       company:
         name: Smart Agency
         url: "https://www.bertelsmann.com/news-and-media/news/territory-establishes-startup-smart-agency.jsp"
-    - position: "Software Engineer at"
+    - position: "Senior Full Stack Developer at"
       date: "07 2020 — 04 2024"
       company:
         name: Heiland
         url: "https://heiland.com/"
-    - position: "Full stack Webdeveloper, at"
+    - position: "Full Stack Developer at"
       date: "11 2019 — 06 2020"
       company:
         name: Upljft
-    - position: "Full stack Software Engineer, at"
+    - position: "Full Stack Developer at"
       date: "02 2018 — 10 2019"
       company:
         name: OSP
@@ -110,7 +126,7 @@ faq:
         - label: What is your tech stack?
           content: |
             - *Fontend:* VueJs, Nuxt, React, Native Javascript, TypeScript
-            - *Backend:* Node.js (Express), Firebase, PHP (Laravel)
+            - *Backend:* Node.js (Express, NestJs), Java (Spring Boot), Firebase
             - *Database:* PostgreSQL, MySQL, MongoDB, Firebase Firestore
             - *Cloud*: AWS (Lambda, Beanstalk, S3, Cloudformation), Firebase, Vercel
             - *DevOps: CI/CD (GitHub, Gitlab, Bitbucket), Docker*
