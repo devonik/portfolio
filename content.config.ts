@@ -64,6 +64,15 @@ export default defineContentConfig({
             })
           }))
         }),
+        certifications: createBaseSchema().extend({
+          items: z.array(z.object({
+            name: z.string(),
+            level: z.string(),
+            icon: z.string().editor({ input: 'icon' }),
+            color: z.string(),
+            url: z.string()
+          }))
+        }),
         testimonials: z.array(createTestimonialSchema()),
         blog: createBaseSchema(),
         faq: createBaseSchema().extend({

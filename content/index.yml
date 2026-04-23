@@ -80,6 +80,30 @@ experience:
       date: "02 2018 — 10 2019"
       company:
         name: OSP
+certifications:
+  title: "Certifications"
+  description: "Officially certified by the teams behind the frameworks I use every day."
+  items:
+    - name: "Vue.js Certified"
+      level: "Senior"
+      icon: "i-simple-icons-vuedotjs"
+      color: "#10B981"
+      url: "https://certificates.dev/vuejs/certificates/9cf92d07-4821-4e2a-bf50-b0a294029ed5"
+    - name: "Vue.js Certified"
+      level: "Mid-Level"
+      icon: "i-simple-icons-vuedotjs"
+      color: "#10B981"
+      url: "https://certificates.dev/vuejs/certificates/9c70ede6-3f0b-4fd1-b1b0-81193d2d76b0"
+    - name: "React Certified"
+      level: "Senior"
+      icon: "i-simple-icons-react"
+      color: "#61DAFB"
+      url: "https://certificates.dev/react/certificates/a0747682-4336-47ca-a854-83232f789054"
+    - name: "React Certified"
+      level: "Mid-Level"
+      icon: "i-simple-icons-react"
+      color: "#61DAFB"
+      url: "https://certificates.dev/react/certificates/a064961e-6ed7-48be-9650-c7af5d1903d7"
 testimonials:
   - quote: "Niklas knows his stuff, works reliably, and delivers high quality. I can highly recommend his services. He was an asset to our team, quickly familiarized himself with the technology and our development processes, and was thus able to work through tickets and tasks independently in a timely manner."
     author:

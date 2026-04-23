@@ -29,6 +29,13 @@ useSeoMeta({
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection>
+    <UPageSection
+      :ui="{
+        container: '!pt-0'
+      }"
+    >
+      <LandingCertifications :page />
+    </UPageSection>
     <LandingBlog :page />
     <LandingTestimonials :page />
     <LandingFAQ :page />
