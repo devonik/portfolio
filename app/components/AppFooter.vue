@@ -8,7 +8,29 @@ const { footer } = useAppConfig()
     :ui="{ left: 'text-muted text-xs' }"
   >
     <template #left>
-      {{ footer.credits }}
+      <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-3">
+        <span>{{ footer.credits }}</span>
+        <div class="flex items-center gap-3">
+          <ULink
+            to="/imprint"
+            class="hover:text-default"
+          >
+            Imprint
+          </ULink>
+          <ULink
+            to="/privacy"
+            class="hover:text-default"
+          >
+            Privacy
+          </ULink>
+          <ULink
+            to="/legal"
+            class="hover:text-default"
+          >
+            Legal
+          </ULink>
+        </div>
+      </div>
     </template>
 
     <template #right>

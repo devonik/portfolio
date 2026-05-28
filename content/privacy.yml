@@ -1,0 +1,69 @@
+title: Privacy Policy
+description: How this website handles your personal data under the GDPR.
+content: |
+  ## 1. Data Controller
+
+  The party responsible for processing data on this website within the meaning of the General Data Protection Regulation (GDPR) is:
+
+  **DEVNIK LLC**
+  30 N Gould St, Ste R
+  Sheridan, Wyoming 82801
+  United States of America
+  Represented by: Niklas Grieger, Managing Member
+  Email: niklas.grieger@devnik.dev
+
+  ## 2. Scope of Data Collection
+
+  ### 2.1 Visiting the website
+
+  When you visit this website, the hosting provider automatically collects technical information that your browser transmits, stored in server log files:
+
+  - IP address (anonymized where technically possible)
+  - Date and time of the request
+  - URL accessed and HTTP status code
+  - Amount of data transferred
+  - Browser type, version and language
+  - Operating system
+  - Referrer URL
+
+  This data is processed for the legitimate interest of ensuring stable, secure operation of the website (Art. 6 (1) lit. f GDPR). Server logs are retained for a maximum of 30 days and then deleted.
+
+  ### 2.2 Contacting me
+
+  If you contact me by email or through the booking link, the data you submit (name, email address, message content, any scheduling details) will be processed solely for the purpose of handling your inquiry and any follow-up questions (Art. 6 (1) lit. b GDPR for pre-contractual measures, or Art. 6 (1) lit. f GDPR for general inquiries). This data is deleted once it is no longer required, unless statutory retention obligations apply.
+
+  ## 3. Cookies and Tracking
+
+  This website does not set tracking cookies and does not use third-party analytics by default. Only strictly necessary technical storage required for basic site functionality (e.g. preferred color mode) may be used. If this changes, you will be informed via a consent banner before any non-essential storage occurs.
+
+  ## 4. Third-Party Services
+
+  The following third parties may receive personal data when you use specific features of this site:
+
+  - **Hosting:** Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA — for delivering the website (Art. 6 (1) lit. f GDPR). Vercel acts as a data processor under a Data Processing Agreement. Edge requests may be processed in their global CDN network.
+  - **Booking:** Cal.com, Inc., 2261 Market Street #4382, San Francisco, CA 94114, USA — when you book a meeting via the linked button (cal.com/devnik). Any data you submit (name, email, scheduling details) is processed by Cal.com under their own [privacy policy](https://cal.com/privacy).
+  - **External links:** Outbound links (e.g. LinkedIn, GitHub, StackOverflow, npm) are not loaded until you click them; no data is transmitted by the mere presence of the link.
+
+  Where third-party providers are located outside the EU/EEA, appropriate safeguards (e.g. EU Standard Contractual Clauses) are in place.
+
+  ## 5. Your Rights under the GDPR
+
+  You have the right to:
+
+  - Access the personal data I hold about you (Art. 15 GDPR)
+  - Have inaccurate data rectified (Art. 16 GDPR)
+  - Have your data erased (Art. 17 GDPR), subject to statutory retention obligations
+  - Restrict processing (Art. 18 GDPR)
+  - Data portability (Art. 20 GDPR)
+  - Object to processing carried out on the basis of legitimate interests (Art. 21 GDPR)
+  - Withdraw consent at any time, with effect for the future (Art. 7 (3) GDPR)
+  - Lodge a complaint with a supervisory authority (Art. 77 GDPR)
+
+  ## 6. Contact for Privacy Matters
+
+  To exercise your rights or for any questions about how your personal data is processed, please contact me at niklas.grieger@devnik.dev.
+
+  ## 7. Changes to this Policy
+
+  This privacy policy may be updated to reflect changes in the website or in applicable law. The most recent version is always available at this URL.
+lastUpdated: 2026-05-28

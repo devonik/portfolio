@@ -142,6 +142,30 @@ export default defineContentConfig({
         content: z.object({}),
         images: z.array(createImageSchema())
       })
+    }),
+    imprint: defineCollection({
+      type: 'page',
+      source: 'imprint.yml',
+      schema: z.object({
+        content: z.object({}),
+        lastUpdated: z.date().optional()
+      })
+    }),
+    privacy: defineCollection({
+      type: 'page',
+      source: 'privacy.yml',
+      schema: z.object({
+        content: z.object({}),
+        lastUpdated: z.date().optional()
+      })
+    }),
+    legal: defineCollection({
+      type: 'page',
+      source: 'legal.yml',
+      schema: z.object({
+        content: z.object({}),
+        lastUpdated: z.date().optional()
+      })
     })
   }
 })

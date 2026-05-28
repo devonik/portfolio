@@ -23,7 +23,7 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Created by Niklas Grieger • © 2025`,
+    credits: `Created by Niklas Grieger • © 2026 Devnik LLC`,
     colorMode: false,
     links: [{
       'icon': 'i-lucide-mail',
