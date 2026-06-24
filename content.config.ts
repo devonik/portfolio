@@ -49,6 +49,7 @@ export default defineContentConfig({
       schema: z.object({
         hero: z.object({
           links: z.array(createButtonSchema()),
+          carouselLabel: z.string().optional(),
           images: z.array(createImageSchema())
         }),
         about: createBaseSchema(),
@@ -96,7 +97,7 @@ export default defineContentConfig({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
+        url: z.string().optional(),
         tags: z.array(z.string()),
         date: z.date()
       })

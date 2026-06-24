@@ -1,13 +1,14 @@
 seo:
-  title: "Niklas Grieger - Senior Full Stack Developer | React · TypeScript · Node.js"
-  description: "Welcome to my portfolio! I'm Niklas Grieger, a passionate Senior Full Stack Developer specializing in building efficient and scalable web applications. Explore my projects, experience, and get in touch!"
-title: "Hey, I'm Niklas Grieger Senior Full Stack Developer"
-description: "I'm a passionate Senior Full Stack Developer specializing in building efficient and scalable web applications. Explore my projects, experience, and get in touch!"
+  title: "Niklas Grieger · Full Stack Freelancer | Vue · Node.js · AWS"
+  description: "Full Stack Engineer · Vue, Nuxt, Node.js & AWS · 8+ years shipping scalable web apps and AI-powered products. Available for remote freelance."
+title: "I turn complex problems into clean, scalable code."
+description: "Senior Full Stack Engineer specializing in Vue/Nuxt, Node.js, and AWS. I've migrated monoliths to microservices, rebuilt legacy frontends, and shipped AI-powered products — all remotely, all to production. Currently available."
 hero:
   links:
     - label: View My Work
       to: /projects
       color: neutral
+  carouselLabel: "Selected projects from the last 8 years"
   images:
     - src: /hero/project-ai-think.png
       alt: Project AI Think
@@ -36,7 +37,7 @@ hero:
 about:
   title: "About Me"
   description: |
-    As a Senior Full Stack Developer with a focus on frontend since 01/2018, I'm building applications from portfolios to complex web applications such as E-Commerce Shops for B2B businesses or mobile apps with cross-frameworks React Native or Flutter.
+    As a Senior Full Stack Developer with a focus on frontend since 01/2018, I'm building applications from portfolios to complex web applications such as E-Commerce shops for B2B businesses and AI-powered products, as well as mobile apps with React Native.
     My approach is centered around writing clean, maintainable code while ensuring optimal performance, user- and developer experience.
 experience:
   title: Work Experience
@@ -146,7 +147,7 @@ faq:
             - Performance optimization
             - API integration and development
             - Ongoing maintenance and support
-            - Mobile development with React Native or Flutter
+            - Mobile development with React Native
         - label: What is your tech stack?
           content: |
             - *Fontend:* VueJs, Nuxt, React, Native Javascript, TypeScript
@@ -154,7 +155,7 @@ faq:
             - *Database:* PostgreSQL, MySQL, MongoDB, Firebase Firestore
             - *Cloud*: AWS (Lambda, Beanstalk, S3, Cloudformation), Firebase, Vercel
             - *DevOps: CI/CD (GitHub, Gitlab, Bitbucket), Docker*
-            - *Mobile:* React Native, Flutter
+            - *Mobile:* React Native
         - label: Do you work with startups?
           content: |
             Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.

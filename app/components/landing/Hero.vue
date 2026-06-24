@@ -155,6 +155,12 @@ defineProps<{
         </Motion>
       </div>
     </template>
+    <p
+      v-if="page.hero.carouselLabel"
+      class="mt-8 text-center text-xs uppercase tracking-widest text-muted"
+    >
+      {{ page.hero.carouselLabel }}
+    </p>
     <UMarquee
       pause-on-hover
       class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
