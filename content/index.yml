@@ -37,8 +37,7 @@ hero:
 about:
   title: "About Me"
   description: |
-    As a Senior Full Stack Developer with a focus on frontend since 01/2018, I'm building applications from portfolios to complex web applications such as E-Commerce shops for B2B businesses and AI-powered products, as well as mobile apps with React Native.
-    My approach is centered around writing clean, maintainable code while ensuring optimal performance, user- and developer experience.
+    Senior Full Stack Engineer with 8+ years of experience building scalable web apps, AI-powered products, and mobile apps — from architecture to deployment. Remote-first, async-friendly, currently available.
 experience:
   title: Work Experience
   items:
@@ -136,48 +135,64 @@ faq:
   categories:
     - title: Services & Process
       questions:
-        - label: What services do you offer?
+        - label: What kind of projects do you take on?
           content: |
-            I specialize in full stack web development with a focus on front-end technologies like Vue.js and Nuxt.js. My services include:
-            - Planning of clients needs and translateing them into technical requirements
-            - Create and translate designs with Figma
-            - Custom web application development
-            - Responsive UI/UX design and implementation
-            - E-Commerce solutions
-            - Performance optimization
-            - API integration and development
-            - Ongoing maintenance and support
-            - Mobile development with React Native
-        - label: What is your tech stack?
+            I work on web applications, SaaS platforms, B2B products, and AI-powered tools — end-to-end. That means I can own the full stack: frontend, backend, infrastructure, and deployment.
+
+            Typical engagements include:
+            - Building new products from scratch (Vue/Nuxt + Node.js/NestJS + AWS)
+            - Vue 2 → Vue 3 / Nuxt migrations
+            - Monolith → microservices decomposition
+            - Integrating AI/LLM capabilities into existing products
+            - WordPress → Headless CMS migrations
+            - Mobile apps with React Native
+        - label: How do you typically work with clients?
           content: |
-            - *Fontend:* VueJs, Nuxt, React, Native Javascript, TypeScript
-            - *Backend:* Node.js (Express, NestJs), Java (Spring Boot), Firebase
-            - *Database:* PostgreSQL, MySQL, MongoDB, Firebase Firestore
-            - *Cloud*: AWS (Lambda, Beanstalk, S3, Cloudformation), Firebase, Vercel
-            - *DevOps: CI/CD (GitHub, Gitlab, Bitbucket), Docker*
-            - *Mobile:* React Native
-        - label: Do you work with startups?
+            I work fully remote and async-first. Most of my clients are in Europe or the Americas — my timezone flexibility as a digital nomad means I can overlap with both.
+
+            In practice: I integrate into your existing workflow (GitHub/GitLab, Linear, Jira, Slack), communicate proactively, and don't need hand-holding to get started. I'm used to being the only external engineer on a team, or embedded in a larger dev team.
+        - label: Do you work as a contractor or project-based?
           content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
+            Both. I operate through my US LLC (Devnik LLC), which makes invoicing straightforward for international clients.
+
+            - **Contractor (hourly/daily):** Ongoing work, flexible scope — ideal for product teams needing a reliable senior engineer
+            - **Project-based (fixed price):** Works well for well-defined scopes like migrations, MVPs, or specific feature builds
+
     - title: Pricing & Timelines
       questions:
-        - label: How much does a project typically cost?
+        - label: What is your rate?
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific tasks, my day rate is $700.
-        - label: What are your payment terms?
+            My standard rate is **85 €/h** (day rate: 680 €). For US/international clients billed in USD, we can align on an equivalent.
+
+            For longer engagements or retainers, I'm open to discussing adjusted terms. Feel free to reach out — I'm flexible depending on the project fit.
+        - label: Do you offer fixed-price projects?
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
+            Yes, for well-defined scopes. After an initial discovery call where we align on requirements, I'll provide a detailed estimate with a clear timeline. Fixed-price works best for migrations, MVPs, or specific feature builds with stable requirements.
+        - label: How quickly can you start?
           content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
-          content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
+            I'm currently available and can typically start within 1–2 weeks depending on your onboarding process. [Get in touch](mailto:niklas.grieger@devnik.dev) or [schedule a call](https://cal.com/devnik) to discuss your timeline.
+
+    - title: Tech & Expertise
       questions:
-        - label: What do you enjoy most about your work?
+        - label: What is your primary tech stack?
           content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
+            **Frontend**
+            Vue.js (2 & 3), Nuxt.js, TypeScript, Pinia, Vuetify, TailwindCSS, React, React Native
+
+            **Backend**
+            Node.js, NestJS, Java Spring Boot, REST APIs, GraphQL
+
+            **Cloud & DevOps**
+            AWS (Lambda, EC2, Beanstalk, S3, OpenSearch, API Gateway, Cognito, EventBridge, SNS/SQS, CDK), Docker, Kubernetes, Terraform, GitLab CI/CD
+
+            **Databases**
+            PostgreSQL, Redis, Supabase, DynamoDB
+
+            **AI & Tooling**
+            Claude Code, DeepSeek LLM (self-hosted), OpenAI API, Crawl4AI, Algolia, Storybook
+        - label: Can you handle both frontend and backend?
           content: |
-            When I'm not designing or coding, I enjoy traveling the world, explore new cultures and scuba diving in the ocean. I'm also passionate about tabletennis and occasionally contribute to open-source projects.
+            Yes — this is actually one of my main strengths. I've spent 8+ years working across the full stack, which means I can own features end-to-end without creating handoff friction between frontend and backend. I'm most specialized in Vue/Nuxt on the frontend and Node.js/NestJS on the backend, with solid Java Spring Boot experience for enterprise contexts.
+        - label: Do you have experience with AI integrations?
+          content: |
+            Yes, hands-on. I've built an embeddable AI avatar chat plugin (users upload PDFs, an AI avatar speaks the answers), set up a self-hosted DeepSeek LLM on AWS EC2 as a cost-efficient ChatGPT alternative, built an automated web crawling pipeline with AI-assisted data extraction, and I use Claude Code daily in my development workflow.

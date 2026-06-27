@@ -2,25 +2,25 @@ seo:
   title: "About · Niklas Grieger | Senior Full Stack Engineer"
   description: "Senior Full Stack Engineer with 8+ years of experience. Vue & Nuxt specialist, remote-first, currently traveling South America as a digital nomad."
 title: About Me
-description: Learn more about my journey as a full stack developer, my philosophy, and my passion for crafting intuitive digital experiences.
+description: Senior Full Stack Engineer with 8+ years of experience building scalable web applications — from architecture to deployment.
 content: |
-  Hello 👋 I'm a Senior Full Stack Developer since 01/2018 with a passion to improve User- and Developer experiences, solve problems and always improving oneself 📚
+  Hello 👋 I'm Niklas, a Senior Full Stack Engineer with 8+ years of experience building scalable web applications — from architecture to deployment.
 
   I work **remote-first** and I'm currently traveling through **South America** as a digital nomad. That puts me in flexible timezones — convenient overlap with both **European and Americas** client hours, so async-friendly collaboration just works.
-  
+
   ### My Philosophy
 
-  My philosophy is rooted in **understanding**, **analyzing** and **problem-solving**. I believe great development starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  My philosophy is rooted in **understanding the problem before touching the code**. I believe great engineering starts with understanding the 'why' — the business need, the user's pain point, or the architectural constraint — before jumping to solutions.
   <br><br>
-  I strive to create **clean, maintainable code** that not only meets current requirements but is also adaptable for future needs. I follow best practices and design patterns to ensure scalability and performance.
+  I strive to write **clean, maintainable code** that not only solves today's problem but doesn't become tomorrow's tech debt. I follow established patterns and best practices, but I'm pragmatic — the goal is working software, not perfect abstractions.
 
   ### What Drives Me
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a idea to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  I'm most energized by problems that have real complexity underneath — legacy systems that need untangling, migrations that look impossible on paper, or integrating new technology like AI into products that weren't built for it. I like owning things end-to-end and leaving codebases in better shape than I found them.
 
   ### Beyond the Screen
 
-  If I'm not in front of my laptop, I'm most likely travelling 🗺️⁀જ✈︎, scuba diving 🤿 or in a table tennis club 🏓
+  If I'm not in front of my laptop, I'm most likely travelling 🗺️⁀જ✈︎, scuba diving 🤿 or playing table tennis 🏓
   <br><br>
   Thanks for stopping by. Feel free to browse my [projects](/projects) or get in touch if you'd like to collaborate!
 images:
