@@ -145,4 +145,10 @@ After your migration is complete:
 - Enjoy better performance, security, and developer experience
 - Focus on growing your business instead of maintaining plugins
 
-The future of web content management is headless, API-first, and Strapi is leading that revolution.
+Not sure whether to go with Vue/Nuxt or React/Next.js for your new frontend? I wrote a full comparison [here]. If you want to go deep on either framework, I've been working through the official certifications myself:
+
+- [Vue certification](https://certificates.dev/vuejs?friend=DEVNIK)
+- [Nuxt certification](https://certificates.dev/nuxt?friend=DEVNIK)
+- [React certification](https://certificates.dev/react?friend=DEVNIK)
+
+*Affiliate links — I'm a partner of certificates.dev.*

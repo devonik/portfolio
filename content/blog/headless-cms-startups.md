@@ -82,6 +82,14 @@ There's no universal answer, but here's a practical guide based on what I've wor
 
 **My recommendation for most early-stage startups:** Start with Storyblok if your marketing team needs autonomy, or Strapi if your developers want full control and you're cost-sensitive.
 
+Not sure whether to build your frontend in Vue/Nuxt or React/Next.js? I wrote a full comparison [here]. If you want to go deep on either framework:
+
+- [Vue certification](https://certificates.dev/vuejs?friend=DEVNIK)
+- [Nuxt certification](https://certificates.dev/nuxt?friend=DEVNIK)
+- [React certification](https://certificates.dev/react?friend=DEVNIK)
+
+*Affiliate links — I'm a partner of certificates.dev.*
+
 ## When Headless Is NOT the Right Choice
 
 To be fair — there are situations where headless is overkill:
