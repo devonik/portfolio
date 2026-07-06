@@ -1,5 +1,5 @@
 <template>
-  <div class="diagram my-8">
+  <div class="mic-diagram">
     <svg
       width="100%"
       viewBox="0 0 680 160"
@@ -9,183 +9,137 @@
       <title>Real-world migration impact</title>
       <desc>Four outcomes: 70% faster page loads, 15+ plugins eliminated, reduced hosting costs, improved developer experience.</desc>
 
-      <!-- Card 1: Speed -->
       <rect
         x="40"
         y="20"
         width="140"
         height="120"
         rx="8"
-        :fill="tealFill"
-        :stroke="tealStroke"
-        stroke-width="0.5"
+        class="teal-box"
       />
       <text
-        :fill="tealTitle"
-        font-family="sans-serif"
-        font-size="28"
-        font-weight="500"
+        class="big-num teal-title"
         x="110"
-        y="72"
+        y="78"
         text-anchor="middle"
       >70%</text>
       <text
-        :fill="tealSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="teal-sub"
         x="110"
-        y="94"
+        y="100"
         text-anchor="middle"
       >faster page loads</text>
       <text
-        :fill="tealSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="teal-sub"
         x="110"
-        y="112"
+        y="116"
         text-anchor="middle"
       >after migration</text>
 
-      <!-- Card 2: Plugins -->
       <rect
         x="200"
         y="20"
         width="140"
         height="120"
         rx="8"
-        :fill="purpleFill"
-        :stroke="purpleStroke"
-        stroke-width="0.5"
+        class="purple-box"
       />
       <text
-        :fill="purpleTitle"
-        font-family="sans-serif"
-        font-size="28"
-        font-weight="500"
+        class="big-num purple-title"
         x="270"
-        y="72"
+        y="78"
         text-anchor="middle"
       >15+</text>
       <text
-        :fill="purpleSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="purple-sub"
         x="270"
-        y="94"
+        y="100"
         text-anchor="middle"
       >plugins eliminated</text>
       <text
-        :fill="purpleSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="purple-sub"
         x="270"
-        y="112"
+        y="116"
         text-anchor="middle"
       >zero maintenance</text>
 
-      <!-- Card 3: Hosting -->
       <rect
         x="360"
         y="20"
         width="140"
         height="120"
         rx="8"
-        :fill="amberFill"
-        :stroke="amberStroke"
-        stroke-width="0.5"
+        class="amber-box"
       />
       <text
-        :fill="amberTitle"
-        font-family="sans-serif"
-        font-size="28"
-        font-weight="500"
+        class="big-num amber-title"
         x="430"
-        y="72"
+        y="78"
         text-anchor="middle"
       >↓</text>
       <text
-        :fill="amberSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="amber-sub"
         x="430"
-        y="94"
+        y="100"
         text-anchor="middle"
       >hosting costs</text>
       <text
-        :fill="amberSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="amber-sub"
         x="430"
-        y="112"
+        y="116"
         text-anchor="middle"
       >leaner infrastructure</text>
 
-      <!-- Card 4: DX -->
       <rect
         x="520"
         y="20"
         width="140"
         height="120"
         rx="8"
-        :fill="greenFill"
-        :stroke="greenStroke"
-        stroke-width="0.5"
+        class="green-box"
       />
       <text
-        :fill="greenTitle"
-        font-family="sans-serif"
-        font-size="28"
-        font-weight="500"
+        class="big-num green-title"
         x="590"
-        y="72"
+        y="78"
         text-anchor="middle"
       >✓</text>
       <text
-        :fill="greenSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="green-sub"
         x="590"
-        y="94"
+        y="100"
         text-anchor="middle"
       >better dev experience</text>
       <text
-        :fill="greenSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="green-sub"
         x="590"
-        y="112"
+        y="116"
         text-anchor="middle"
       >modern headless stack</text>
     </svg>
   </div>
 </template>
 
-<script setup>
-const isDark = typeof window !== 'undefined'
-  ? window.matchMedia('(prefers-color-scheme: dark)').matches
-  : false
-
-const tealFill = isDark ? '#04342C' : '#E1F5EE'
-const tealStroke = isDark ? '#1D9E75' : '#1D9E75'
-const tealTitle = isDark ? '#5DCAA5' : '#085041'
-const tealSub = isDark ? '#1D9E75' : '#0F6E56'
-
-const purpleFill = isDark ? '#26215C' : '#EEEDFE'
-const purpleStroke = isDark ? '#7F77DD' : '#7F77DD'
-const purpleTitle = isDark ? '#AFA9EC' : '#3C3489'
-const purpleSub = isDark ? '#7F77DD' : '#534AB7'
-
-const amberFill = isDark ? '#412402' : '#FAEEDA'
-const amberStroke = isDark ? '#BA7517' : '#BA7517'
-const amberTitle = isDark ? '#EF9F27' : '#633806'
-const amberSub = isDark ? '#BA7517' : '#854F0B'
-
-const greenFill = isDark ? '#173404' : '#EAF3DE'
-const greenStroke = isDark ? '#639922' : '#639922'
-const greenTitle = isDark ? '#97C459' : '#27500A'
-const greenSub = isDark ? '#639922' : '#3B6D11'
-</script>
+<script setup></script>
 
 <style scoped>
-.diagram { border-radius: 8px; overflow: hidden; }
+.mic-diagram { border-radius: 8px; overflow: hidden; }
+svg text { font-family: sans-serif; font-size: 12px; }
+.big-num { font-size: 28px; font-weight: 500; }
+
+.teal-box   { fill: light-dark(#E1F5EE, #04342C); stroke: #1D9E75; stroke-width: 0.5; }
+.teal-title { fill: light-dark(#085041, #5DCAA5); }
+.teal-sub   { fill: light-dark(#0F6E56, #1D9E75); }
+
+.purple-box   { fill: light-dark(#EEEDFE, #26215C); stroke: #7F77DD; stroke-width: 0.5; }
+.purple-title { fill: light-dark(#3C3489, #AFA9EC); }
+.purple-sub   { fill: light-dark(#534AB7, #7F77DD); }
+
+.amber-box   { fill: light-dark(#FAEEDA, #412402); stroke: #BA7517; stroke-width: 0.5; }
+.amber-title { fill: light-dark(#633806, #EF9F27); }
+.amber-sub   { fill: light-dark(#854F0B, #BA7517); }
+
+.green-box   { fill: light-dark(#EAF3DE, #173404); stroke: #639922; stroke-width: 0.5; }
+.green-title { fill: light-dark(#27500A, #97C459); }
+.green-sub   { fill: light-dark(#3B6D11, #639922); }
 </style>

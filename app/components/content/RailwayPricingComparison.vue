@@ -1,5 +1,5 @@
 <template>
-  <div class="diagram my-8">
+  <div class="rpc-diagram">
     <svg
       width="100%"
       viewBox="0 0 680 200"
@@ -9,22 +9,16 @@
       <title>Hosting cost comparison: Namecheap vs DigitalOcean vs Railway</title>
       <desc>Three options compared by RAM, cost per year, and ops overhead.</desc>
 
-      <!-- Namecheap -->
       <rect
         x="40"
         y="20"
         width="180"
         height="160"
         rx="8"
-        :fill="grayFill"
-        :stroke="grayStroke"
-        stroke-width="0.5"
+        class="gray-box"
       />
       <text
-        :fill="grayTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="gray-title card-title"
         x="130"
         y="50"
         text-anchor="middle"
@@ -34,60 +28,43 @@
         y1="60"
         x2="204"
         y2="60"
-        :stroke="grayStroke"
-        stroke-width="0.5"
-        opacity="0.5"
+        class="gray-divider"
       />
       <text
-        :fill="grayTitle"
-        font-family="sans-serif"
-        font-size="12"
+        class="gray-title ram"
         x="130"
         y="82"
         text-anchor="middle"
       >4 GB RAM</text>
       <text
-        :fill="grayTitle"
-        font-family="sans-serif"
-        font-size="22"
-        font-weight="500"
+        class="gray-title price"
         x="130"
         y="118"
         text-anchor="middle"
       >$107</text>
       <text
-        :fill="grayTitle"
-        font-family="sans-serif"
-        font-size="12"
+        class="gray-title per-year"
         x="130"
         y="136"
         text-anchor="middle"
       >per year</text>
       <text
-        :fill="grayTitle"
-        font-family="sans-serif"
-        font-size="12"
+        class="gray-title ops"
         x="130"
         y="158"
         text-anchor="middle"
       >manual setup + maintenance</text>
 
-      <!-- DigitalOcean -->
       <rect
         x="250"
         y="20"
         width="180"
         height="160"
         rx="8"
-        :fill="coralFill"
-        :stroke="coralStroke"
-        stroke-width="0.5"
+        class="coral-box"
       />
       <text
-        :fill="coralTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="coral-title card-title"
         x="340"
         y="50"
         text-anchor="middle"
@@ -97,60 +74,43 @@
         y1="60"
         x2="414"
         y2="60"
-        :stroke="coralStroke"
-        stroke-width="0.5"
-        opacity="0.5"
+        class="coral-divider"
       />
       <text
-        :fill="coralTitle"
-        font-family="sans-serif"
-        font-size="12"
+        class="coral-title ram"
         x="340"
         y="82"
         text-anchor="middle"
       >4 GB RAM</text>
       <text
-        :fill="coralTitle"
-        font-family="sans-serif"
-        font-size="22"
-        font-weight="500"
+        class="coral-title price"
         x="340"
         y="118"
         text-anchor="middle"
       >$288</text>
       <text
-        :fill="coralTitle"
-        font-family="sans-serif"
-        font-size="12"
+        class="coral-title per-year"
         x="340"
         y="136"
         text-anchor="middle"
       >per year</text>
       <text
-        :fill="coralTitle"
-        font-family="sans-serif"
-        font-size="12"
+        class="coral-title ops"
         x="340"
         y="158"
         text-anchor="middle"
       >manual setup + maintenance</text>
 
-      <!-- Railway -->
       <rect
         x="460"
         y="20"
         width="180"
         height="160"
         rx="8"
-        :fill="tealFill"
-        :stroke="tealStroke"
-        stroke-width="1"
+        class="teal-box"
       />
       <text
-        :fill="tealTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="teal-title card-title"
         x="550"
         y="50"
         text-anchor="middle"
@@ -160,39 +120,28 @@
         y1="60"
         x2="624"
         y2="60"
-        :stroke="tealStroke"
-        stroke-width="0.5"
-        opacity="0.5"
+        class="teal-divider"
       />
       <text
-        :fill="tealTitle"
-        font-family="sans-serif"
-        font-size="12"
+        class="teal-title ram"
         x="550"
         y="82"
         text-anchor="middle"
       >8 GB RAM</text>
       <text
-        :fill="tealTitle"
-        font-family="sans-serif"
-        font-size="22"
-        font-weight="500"
+        class="teal-title price"
         x="550"
         y="118"
         text-anchor="middle"
       >$60</text>
       <text
-        :fill="tealTitle"
-        font-family="sans-serif"
-        font-size="12"
+        class="teal-title per-year"
         x="550"
         y="136"
         text-anchor="middle"
       >per year</text>
       <text
-        :fill="tealTitle"
-        font-family="sans-serif"
-        font-size="12"
+        class="teal-title ops"
         x="550"
         y="158"
         text-anchor="middle"
@@ -201,24 +150,27 @@
   </div>
 </template>
 
-<script setup>
-const isDark = typeof window !== 'undefined'
-  ? window.matchMedia('(prefers-color-scheme: dark)').matches
-  : false
-
-const grayFill = isDark ? '#2C2C2A' : '#F1EFE8'
-const grayStroke = isDark ? '#5F5E5A' : '#B4B2A9'
-const grayTitle = isDark ? '#D3D1C7' : '#444441'
-
-const coralFill = isDark ? '#3d1a0d' : '#FAECE7'
-const coralStroke = isDark ? '#D85A30' : '#D85A30'
-const coralTitle = isDark ? '#F0997B' : '#712B13'
-
-const tealFill = isDark ? '#04342C' : '#E1F5EE'
-const tealStroke = isDark ? '#1D9E75' : '#1D9E75'
-const tealTitle = isDark ? '#5DCAA5' : '#085041'
-</script>
+<script setup></script>
 
 <style scoped>
-.diagram { border-radius: 8px; overflow: hidden; }
+.rpc-diagram { border-radius: 8px; overflow: hidden; }
+svg text { font-family: sans-serif; }
+
+.card-title { font-size: 14px; font-weight: 500; }
+.ram        { font-size: 12px; }
+.price      { font-size: 28px; font-weight: 500; }
+.per-year   { font-size: 12px; }
+.ops        { font-size: 12px; }
+
+.gray-box     { fill: light-dark(#F1EFE8, #2C2C2A); stroke: light-dark(#B4B2A9, #5F5E5A); stroke-width: 0.5; }
+.gray-title   { fill: light-dark(#444441, #D3D1C7); }
+.gray-divider { stroke: light-dark(rgba(136,135,128,0.4), rgba(136,135,128,0.4)); stroke-width: 0.5; }
+
+.coral-box     { fill: light-dark(#FAECE7, #3d1a0d); stroke: #D85A30; stroke-width: 0.5; }
+.coral-title   { fill: light-dark(#712B13, #F0997B); }
+.coral-divider { stroke: light-dark(rgba(216,90,48,0.4), rgba(216,90,48,0.4)); stroke-width: 0.5; }
+
+.teal-box     { fill: light-dark(#E1F5EE, #04342C); stroke: #1D9E75; stroke-width: 1; }
+.teal-title   { fill: light-dark(#085041, #5DCAA5); }
+.teal-divider { stroke: light-dark(rgba(29,158,117,0.4), rgba(29,158,117,0.4)); stroke-width: 0.5; }
 </style>

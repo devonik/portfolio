@@ -1,5 +1,5 @@
 <template>
-  <div class="diagram my-8">
+  <div class="eba-diagram">
     <svg
       width="100%"
       viewBox="0 0 680 240"
@@ -7,10 +7,10 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>ESLint setup: before vs after</title>
-      <desc>Left: the old complicated setup with ESLint plus Prettier plus VSCode formatter conflicts. Right: the simple setup with just antfu ESLint config.</desc>
+      <desc>Left: complicated setup with ESLint, Prettier, and VSCode conflicts. Right: simple setup with antfu ESLint config.</desc>
       <defs>
         <marker
-          id="arrow-eb"
+          id="arrow-eba"
           viewBox="0 0 10 10"
           refX="8"
           refY="5"
@@ -29,22 +29,16 @@
         </marker>
       </defs>
 
-      <!-- Column headers -->
       <rect
         x="40"
         y="20"
         width="260"
         height="36"
         rx="8"
-        :fill="coralFill"
-        :stroke="coralStroke"
-        stroke-width="0.5"
+        class="coral-box"
       />
       <text
-        :fill="coralTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="coral-title header"
         x="170"
         y="43"
         text-anchor="middle"
@@ -56,129 +50,163 @@
         width="260"
         height="36"
         rx="8"
-        :fill="tealFill"
-        :stroke="tealStroke"
-        stroke-width="0.5"
+        class="teal-box"
       />
       <text
-        :fill="tealTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="teal-title header"
         x="510"
         y="43"
         text-anchor="middle"
       >After — @antfu/eslint-config</text>
 
-      <!-- Before items -->
-      <g
-        v-for="(item, i) in beforeItems"
-        :key="'b'+i"
-      >
-        <rect
-          :x="40"
-          :y="72 + i * 36"
-          width="260"
-          height="28"
-          rx="4"
-          :fill="coralItemFill"
-          :stroke="coralStroke"
-          stroke-width="0.5"
-          opacity="0.8"
-        />
-        <text
-          :fill="coralTitle"
-          font-family="sans-serif"
-          font-size="12"
-          :x="170"
-          :y="72 + i * 36 + 18"
-          text-anchor="middle"
-        >{{ item }}</text>
-      </g>
+      <rect
+        x="40"
+        y="72"
+        width="260"
+        height="28"
+        rx="4"
+        class="coral-item"
+      />
+      <text
+        class="coral-title"
+        x="170"
+        y="90"
+        text-anchor="middle"
+      >ESLint (linting)</text>
+      <rect
+        x="40"
+        y="106"
+        width="260"
+        height="28"
+        rx="4"
+        class="coral-item"
+      />
+      <text
+        class="coral-title"
+        x="170"
+        y="124"
+        text-anchor="middle"
+      >Prettier (formatting)</text>
+      <rect
+        x="40"
+        y="140"
+        width="260"
+        height="28"
+        rx="4"
+        class="coral-item"
+      />
+      <text
+        class="coral-title"
+        x="170"
+        y="158"
+        text-anchor="middle"
+      >eslint-prettier plugin (bridge)</text>
+      <rect
+        x="40"
+        y="174"
+        width="260"
+        height="28"
+        rx="4"
+        class="coral-item"
+      />
+      <text
+        class="coral-title"
+        x="170"
+        y="192"
+        text-anchor="middle"
+      >VSCode formatter conflicts</text>
 
-      <!-- Divider arrow -->
       <line
         x1="316"
         y1="120"
         x2="368"
         y2="120"
-        :stroke="arrowColor"
-        stroke-width="1.5"
-        marker-end="url(#arrow-eb)"
+        class="center-arrow"
+        marker-end="url(#arrow-eba)"
       />
 
-      <!-- After items -->
-      <g
-        v-for="(item, i) in afterItems"
-        :key="'a'+i"
-      >
-        <rect
-          :x="380"
-          :y="72 + i * 36"
-          width="260"
-          height="28"
-          rx="4"
-          :fill="tealItemFill"
-          :stroke="tealStroke"
-          stroke-width="0.5"
-          opacity="0.8"
-        />
-        <text
-          :fill="tealTitle"
-          font-family="sans-serif"
-          font-size="12"
-          :x="510"
-          :y="72 + i * 36 + 18"
-          text-anchor="middle"
-        >{{ item }}</text>
-      </g>
-
-      <!-- Bottom note -->
+      <rect
+        x="380"
+        y="72"
+        width="260"
+        height="28"
+        rx="4"
+        class="teal-item"
+      />
       <text
-        :fill="subtitleColor"
-        font-family="sans-serif"
-        font-size="12"
+        class="teal-title"
+        x="510"
+        y="90"
+        text-anchor="middle"
+      >ESLint only (@antfu/eslint-config)</text>
+      <rect
+        x="380"
+        y="106"
+        width="260"
+        height="28"
+        rx="4"
+        class="teal-item"
+      />
+      <text
+        class="teal-title"
+        x="510"
+        y="124"
+        text-anchor="middle"
+      >Linting + formatting in one</text>
+      <rect
+        x="380"
+        y="140"
+        width="260"
+        height="28"
+        rx="4"
+        class="teal-item"
+      />
+      <text
+        class="teal-title"
+        x="510"
+        y="158"
+        text-anchor="middle"
+      >VSCode saves = auto-fix</text>
+      <rect
+        x="380"
+        y="174"
+        width="260"
+        height="28"
+        rx="4"
+        class="teal-item"
+      />
+      <text
+        class="teal-title"
+        x="510"
+        y="192"
+        text-anchor="middle"
+      >Works for TS, Vue, React, JSON...</text>
+
+      <text
+        class="note"
         x="340"
-        y="226"
+        y="228"
         text-anchor="middle"
       >One config, installed in 5 minutes, works for any project size</text>
     </svg>
   </div>
 </template>
 
-<script setup>
-const isDark = typeof window !== 'undefined'
-  ? window.matchMedia('(prefers-color-scheme: dark)').matches
-  : false
-
-const arrowColor = isDark ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.4)'
-const subtitleColor = isDark ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.4)'
-
-const coralFill = isDark ? '#3d1a0d' : '#FAECE7'
-const coralItemFill = isDark ? '#2a1008' : '#FDF4F0'
-const coralStroke = isDark ? '#D85A30' : '#D85A30'
-const coralTitle = isDark ? '#F0997B' : '#712B13'
-
-const tealFill = isDark ? '#04342C' : '#E1F5EE'
-const tealItemFill = isDark ? '#052e27' : '#F0FAF6'
-const tealStroke = isDark ? '#1D9E75' : '#1D9E75'
-const tealTitle = isDark ? '#5DCAA5' : '#085041'
-
-const beforeItems = [
-  'ESLint (linting)',
-  'Prettier (formatting)',
-  'eslint-prettier plugin (bridge)',
-  'VSCode formatter conflicts'
-]
-
-const afterItems = [
-  'ESLint only (@antfu/eslint-config)',
-  'Linting + formatting in one',
-  'VSCode saves = auto-fix',
-  'Works for TS, Vue, React, JSON...'
-]
-</script>
+<script setup></script>
 
 <style scoped>
-.diagram { border-radius: 8px; overflow: hidden; }
+.eba-diagram { border-radius: 8px; overflow: hidden; }
+svg text { font-family: sans-serif; font-size: 12px; }
+
+.header      { font-size: 14px; font-weight: 500; }
+.note        { font-size: 12px; fill: light-dark(rgba(0,0,0,0.4), rgba(255,255,255,0.4)); }
+.center-arrow { stroke: light-dark(rgba(0,0,0,0.45), rgba(255,255,255,0.55)); stroke-width: 1.5; fill: none; }
+
+.coral-box  { fill: light-dark(#FAECE7, #3d1a0d); stroke: #D85A30; stroke-width: 0.5; }
+.coral-item { fill: light-dark(#FDF4F0, #2a1008); stroke: light-dark(rgba(216,90,48,0.3), rgba(216,90,48,0.3)); stroke-width: 0.5; }
+.coral-title { fill: light-dark(#712B13, #F0997B); }
+
+.teal-box  { fill: light-dark(#E1F5EE, #04342C); stroke: #1D9E75; stroke-width: 0.5; }
+.teal-item { fill: light-dark(#F0FAF6, #052e27); stroke: light-dark(rgba(29,158,117,0.3), rgba(29,158,117,0.3)); stroke-width: 0.5; }
+.teal-title { fill: light-dark(#085041, #5DCAA5); }
 </style>

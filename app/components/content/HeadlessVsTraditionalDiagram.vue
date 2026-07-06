@@ -1,5 +1,5 @@
 <template>
-  <div class="diagram my-8">
+  <div class="hvt-diagram">
     <svg
       width="100%"
       viewBox="0 0 680 340"
@@ -7,7 +7,7 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>Traditional CMS vs Headless CMS architecture</title>
-      <desc>Left: traditional CMS couples backend and frontend in one system. Right: headless CMS exposes content via API to multiple frontends.</desc>
+      <desc>Left: traditional CMS couples backend and frontend. Right: headless CMS exposes content via API to multiple frontends.</desc>
       <defs>
         <marker
           id="arrow-hvt"
@@ -31,35 +31,25 @@
 
       <!-- Column labels -->
       <text
-        :fill="titleColor"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-title"
         x="170"
         y="28"
         text-anchor="middle"
       >Traditional CMS</text>
       <text
-        :fill="subtitleColor"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-sub"
         x="170"
         y="46"
         text-anchor="middle"
       >(e.g. WordPress)</text>
       <text
-        :fill="titleColor"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-title"
         x="490"
         y="28"
         text-anchor="middle"
       >Headless CMS</text>
       <text
-        :fill="subtitleColor"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-sub"
         x="490"
         y="46"
         text-anchor="middle"
@@ -71,9 +61,7 @@
         y1="20"
         x2="340"
         y2="320"
-        :stroke="borderColor"
-        stroke-width="0.5"
-        stroke-dasharray="4,4"
+        class="hvt-divider"
       />
 
       <!-- LEFT: Traditional CMS outer box -->
@@ -83,15 +71,10 @@
         width="220"
         height="190"
         rx="8"
-        :fill="coralFill"
-        :stroke="coralStroke"
-        stroke-width="0.5"
+        class="hvt-coral-box"
       />
       <text
-        :fill="coralTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-coral-title"
         x="170"
         y="88"
         text-anchor="middle"
@@ -104,42 +87,31 @@
         width="180"
         height="56"
         rx="4"
-        fill="none"
-        :stroke="coralStroke"
-        stroke-width="0.5"
-        opacity="0.6"
+        class="hvt-coral-inner"
       />
       <text
-        :fill="coralTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-coral-title"
         x="170"
         y="124"
         text-anchor="middle"
       >Content backend</text>
       <text
-        :fill="coralSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-coral-sub"
         x="170"
         y="142"
         text-anchor="middle"
       >database, admin panel</text>
 
-      <!-- Coupled line -->
+      <!-- Coupled -->
       <line
         x1="170"
         y1="156"
         x2="170"
         y2="168"
-        :stroke="coralStroke"
-        stroke-width="1.5"
+        class="hvt-coupled-line"
       />
       <text
-        :fill="subtitleColor"
-        font-family="sans-serif"
-        font-size="11"
+        class="hvt-sub"
         x="178"
         y="164"
       >tightly coupled</text>
@@ -151,24 +123,16 @@
         width="180"
         height="56"
         rx="4"
-        fill="none"
-        :stroke="coralStroke"
-        stroke-width="0.5"
-        opacity="0.6"
+        class="hvt-coral-inner"
       />
       <text
-        :fill="coralTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-coral-title"
         x="170"
         y="192"
         text-anchor="middle"
       >Frontend (themes)</text>
       <text
-        :fill="coralSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-coral-sub"
         x="170"
         y="210"
         text-anchor="middle"
@@ -180,8 +144,7 @@
         y1="252"
         x2="170"
         y2="280"
-        :stroke="borderColor"
-        stroke-width="1"
+        class="hvt-arrow"
         marker-end="url(#arrow-hvt)"
       />
       <rect
@@ -190,157 +153,117 @@
         width="140"
         height="36"
         rx="4"
-        :fill="grayFill"
-        :stroke="grayStroke"
-        stroke-width="0.5"
+        class="hvt-gray-box"
       />
       <text
-        :fill="grayTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-gray-title"
         x="170"
         y="305"
         text-anchor="middle"
       >One website only</text>
 
-      <!-- RIGHT: Headless CMS box -->
+      <!-- RIGHT: Headless CMS -->
       <rect
         x="360"
         y="62"
         width="180"
         height="72"
         rx="8"
-        :fill="tealFill"
-        :stroke="tealStroke"
-        stroke-width="0.5"
+        class="hvt-teal-box"
       />
       <text
-        :fill="tealTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-teal-title"
         x="450"
         y="88"
         text-anchor="middle"
       >Headless CMS</text>
       <text
-        :fill="tealSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-teal-sub"
         x="450"
         y="108"
         text-anchor="middle"
       >content + REST/GraphQL API</text>
       <text
-        :fill="tealSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-teal-sub"
         x="450"
         y="124"
         text-anchor="middle"
       >no frontend</text>
 
-      <!-- API arrow down -->
+      <!-- API arrows -->
       <line
         x1="450"
         y1="134"
         x2="450"
         y2="158"
-        :stroke="borderColor"
-        stroke-width="1"
+        class="hvt-arrow"
         marker-end="url(#arrow-hvt)"
       />
       <text
-        :fill="subtitleColor"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-sub"
         x="458"
         y="152"
       >API</text>
 
-      <!-- Frontend: Website -->
+      <!-- Frontends -->
       <rect
         x="360"
         y="162"
         width="120"
         height="44"
         rx="4"
-        :fill="purpleFill"
-        :stroke="purpleStroke"
-        stroke-width="0.5"
+        class="hvt-purple-box"
       />
       <text
-        :fill="purpleTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-purple-title"
         x="420"
         y="181"
         text-anchor="middle"
       >Website</text>
       <text
-        :fill="purpleSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-purple-sub"
         x="420"
         y="197"
         text-anchor="middle"
       >Next.js / Nuxt</text>
 
-      <!-- Frontend: Mobile -->
       <rect
         x="500"
         y="162"
         width="120"
         height="44"
         rx="4"
-        :fill="purpleFill"
-        :stroke="purpleStroke"
-        stroke-width="0.5"
+        class="hvt-purple-box"
       />
       <text
-        :fill="purpleTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-purple-title"
         x="560"
         y="181"
         text-anchor="middle"
       >Mobile app</text>
       <text
-        :fill="purpleSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-purple-sub"
         x="560"
         y="197"
         text-anchor="middle"
       >React Native</text>
 
-      <!-- Frontend: Any channel -->
       <rect
         x="430"
         y="226"
         width="120"
         height="44"
         rx="4"
-        :fill="purpleFill"
-        :stroke="purpleStroke"
-        stroke-width="0.5"
+        class="hvt-purple-box"
       />
       <text
-        :fill="purpleTitle"
-        font-family="sans-serif"
-        font-size="14"
-        font-weight="500"
+        class="hvt-purple-title"
         x="490"
         y="245"
         text-anchor="middle"
       >Any channel</text>
       <text
-        :fill="purpleSub"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-purple-sub"
         x="490"
         y="261"
         text-anchor="middle"
@@ -352,38 +275,31 @@
         y1="160"
         x2="420"
         y2="162"
-        :stroke="borderColor"
-        stroke-width="1"
+        class="hvt-arrow"
         marker-end="url(#arrow-hvt)"
       />
       <path
         d="M450 160 L560 160 L560 162"
         fill="none"
-        :stroke="borderColor"
-        stroke-width="1"
+        class="hvt-arrow"
         marker-end="url(#arrow-hvt)"
       />
       <path
         d="M450 160 L490 224"
         fill="none"
-        :stroke="borderColor"
-        stroke-width="1"
+        class="hvt-arrow"
         marker-end="url(#arrow-hvt)"
       />
 
       <!-- Bottom labels -->
       <text
-        :fill="subtitleColor"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-sub"
         x="170"
         y="328"
         text-anchor="middle"
       >one output, locked into framework</text>
       <text
-        :fill="subtitleColor"
-        font-family="sans-serif"
-        font-size="12"
+        class="hvt-sub"
         x="490"
         y="308"
         text-anchor="middle"
@@ -392,38 +308,37 @@
   </div>
 </template>
 
-<script setup>
-const isDark = typeof window !== 'undefined'
-  ? window.matchMedia('(prefers-color-scheme: dark)').matches
-  : false
-
-const titleColor = isDark ? '#e8f0f8' : '#1a1a1a'
-const subtitleColor = isDark ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.45)'
-const borderColor = isDark ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.3)'
-
-const coralFill = isDark ? '#3d1a0d' : '#FAECE7'
-const coralStroke = isDark ? '#D85A30' : '#D85A30'
-const coralTitle = isDark ? '#F0997B' : '#712B13'
-const coralSub = isDark ? '#D85A30' : '#993C1D'
-
-const tealFill = isDark ? '#04342C' : '#E1F5EE'
-const tealStroke = isDark ? '#1D9E75' : '#1D9E75'
-const tealTitle = isDark ? '#5DCAA5' : '#085041'
-const tealSub = isDark ? '#1D9E75' : '#0F6E56'
-
-const purpleFill = isDark ? '#26215C' : '#EEEDFE'
-const purpleStroke = isDark ? '#7F77DD' : '#7F77DD'
-const purpleTitle = isDark ? '#AFA9EC' : '#3C3489'
-const purpleSub = isDark ? '#7F77DD' : '#534AB7'
-
-const grayFill = isDark ? '#2C2C2A' : '#F1EFE8'
-const grayStroke = isDark ? '#888780' : '#888780'
-const grayTitle = isDark ? '#D3D1C7' : '#444441'
-</script>
+<script setup></script>
 
 <style scoped>
-.diagram {
-  border-radius: 8px;
-  overflow: hidden;
-}
+.hvt-diagram { border-radius: 8px; overflow: hidden; }
+
+svg text { font-family: sans-serif; }
+
+.hvt-title { font-size: 14px; font-weight: 500; fill: light-dark(#1a1a1a, #e8f0f8); }
+.hvt-sub   { font-size: 12px; fill: light-dark(rgba(0,0,0,0.45), rgba(255,255,255,0.5)); }
+
+.hvt-divider     { stroke: light-dark(rgba(0,0,0,0.2), rgba(255,255,255,0.2)); stroke-width: 0.5; stroke-dasharray: 4,4; }
+.hvt-arrow       { stroke: light-dark(rgba(0,0,0,0.4), rgba(255,255,255,0.5)); stroke-width: 1; fill: none; }
+.hvt-coupled-line { stroke: light-dark(#D85A30, #D85A30); stroke-width: 1.5; }
+
+/* Coral (Traditional CMS) */
+.hvt-coral-box   { fill: light-dark(#FAECE7, #3d1a0d); stroke: #D85A30; stroke-width: 0.5; }
+.hvt-coral-inner { fill: none; stroke: light-dark(rgba(216,90,48,0.4), rgba(216,90,48,0.4)); stroke-width: 0.5; }
+.hvt-coral-title { font-size: 14px; font-weight: 500; fill: light-dark(#712B13, #F0997B); }
+.hvt-coral-sub   { font-size: 12px; fill: light-dark(#993C1D, #D85A30); }
+
+/* Teal (Headless CMS) */
+.hvt-teal-box   { fill: light-dark(#E1F5EE, #04342C); stroke: #1D9E75; stroke-width: 0.5; }
+.hvt-teal-title { font-size: 14px; font-weight: 500; fill: light-dark(#085041, #5DCAA5); }
+.hvt-teal-sub   { font-size: 12px; fill: light-dark(#0F6E56, #1D9E75); }
+
+/* Purple (frontends) */
+.hvt-purple-box   { fill: light-dark(#EEEDFE, #26215C); stroke: #7F77DD; stroke-width: 0.5; }
+.hvt-purple-title { font-size: 14px; font-weight: 500; fill: light-dark(#3C3489, #AFA9EC); }
+.hvt-purple-sub   { font-size: 12px; fill: light-dark(#534AB7, #7F77DD); }
+
+/* Gray (one website) */
+.hvt-gray-box   { fill: light-dark(#F1EFE8, #2C2C2A); stroke: #888780; stroke-width: 0.5; }
+.hvt-gray-title { font-size: 14px; font-weight: 500; fill: light-dark(#444441, #D3D1C7); }
 </style>

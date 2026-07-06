@@ -1,5 +1,5 @@
 <template>
-  <div class="diagram my-8">
+  <div class="rdf-diagram">
     <svg
       width="100%"
       viewBox="0 0 680 160"
@@ -7,7 +7,7 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>Railway deploy flow in 4 steps</title>
-      <desc>Four steps to deploy on Railway: create project, add Docker image service, enter image name, deploy.</desc>
+      <desc>Four steps: create project, add Docker image service, enter image name, deploy.</desc>
       <defs>
         <marker
           id="arrow-rdf"
@@ -29,38 +29,28 @@
         </marker>
       </defs>
 
-      <!-- Step 1 -->
       <rect
         x="40"
         y="30"
         width="120"
         height="80"
         rx="8"
-        :fill="grayFill"
-        :stroke="grayStroke"
-        stroke-width="0.5"
+        class="gray-box"
       />
       <text
-        :fill="stepNum"
-        font-family="sans-serif"
-        font-size="11"
+        class="step-num"
         x="100"
         y="52"
         text-anchor="middle"
       >1</text>
       <text
-        :fill="grayTitle"
-        font-family="sans-serif"
-        font-size="13"
-        font-weight="500"
+        class="gray-title label"
         x="100"
         y="74"
         text-anchor="middle"
       >New project</text>
       <text
-        :fill="grayTitle"
-        font-family="sans-serif"
-        font-size="11"
+        class="gray-title sub"
         x="100"
         y="92"
         text-anchor="middle"
@@ -71,51 +61,38 @@
         y1="70"
         x2="183"
         y2="70"
-        :stroke="arrowColor"
-        stroke-width="1"
+        class="arrow"
         marker-end="url(#arrow-rdf)"
       />
 
-      <!-- Step 2 -->
       <rect
         x="185"
         y="30"
         width="120"
         height="80"
         rx="8"
-        :fill="purpleFill"
-        :stroke="purpleStroke"
-        stroke-width="0.5"
+        class="purple-box"
       />
       <text
-        :fill="stepNum"
-        font-family="sans-serif"
-        font-size="11"
+        class="step-num"
         x="245"
         y="52"
         text-anchor="middle"
       >2</text>
       <text
-        :fill="purpleTitle"
-        font-family="sans-serif"
-        font-size="13"
-        font-weight="500"
+        class="purple-title label"
         x="245"
         y="70"
         text-anchor="middle"
       >Add service</text>
       <text
-        :fill="purpleSub"
-        font-family="sans-serif"
-        font-size="11"
+        class="purple-sub sub"
         x="245"
         y="86"
         text-anchor="middle"
       >Docker Image</text>
       <text
-        :fill="purpleSub"
-        font-family="sans-serif"
-        font-size="11"
+        class="purple-sub sub"
         x="245"
         y="100"
         text-anchor="middle"
@@ -126,51 +103,38 @@
         y1="70"
         x2="328"
         y2="70"
-        :stroke="arrowColor"
-        stroke-width="1"
+        class="arrow"
         marker-end="url(#arrow-rdf)"
       />
 
-      <!-- Step 3 -->
       <rect
         x="330"
         y="30"
         width="120"
         height="80"
         rx="8"
-        :fill="amberFill"
-        :stroke="amberStroke"
-        stroke-width="0.5"
+        class="amber-box"
       />
       <text
-        :fill="stepNum"
-        font-family="sans-serif"
-        font-size="11"
+        class="step-num"
         x="390"
         y="52"
         text-anchor="middle"
       >3</text>
       <text
-        :fill="amberTitle"
-        font-family="sans-serif"
-        font-size="13"
-        font-weight="500"
+        class="amber-title label"
         x="390"
         y="70"
         text-anchor="middle"
       >Enter image</text>
       <text
-        :fill="amberSub"
-        font-family="sans-serif"
-        font-size="11"
+        class="amber-sub sub"
         x="390"
         y="86"
         text-anchor="middle"
       >unclecode/</text>
       <text
-        :fill="amberSub"
-        font-family="sans-serif"
-        font-size="11"
+        class="amber-sub sub"
         x="390"
         y="100"
         text-anchor="middle"
@@ -181,61 +145,45 @@
         y1="70"
         x2="473"
         y2="70"
-        :stroke="arrowColor"
-        stroke-width="1"
+        class="arrow"
         marker-end="url(#arrow-rdf)"
       />
 
-      <!-- Step 4 -->
       <rect
         x="475"
         y="30"
         width="160"
         height="80"
         rx="8"
-        :fill="tealFill"
-        :stroke="tealStroke"
-        stroke-width="1"
+        class="teal-box"
       />
       <text
-        :fill="stepNum"
-        font-family="sans-serif"
-        font-size="11"
+        class="step-num"
         x="555"
         y="52"
         text-anchor="middle"
       >4</text>
       <text
-        :fill="tealTitle"
-        font-family="sans-serif"
-        font-size="13"
-        font-weight="500"
+        class="teal-title label"
         x="555"
         y="70"
         text-anchor="middle"
       >Deploy ✓</text>
       <text
-        :fill="tealSub"
-        font-family="sans-serif"
-        font-size="11"
+        class="teal-sub sub"
         x="555"
         y="86"
         text-anchor="middle"
       >live in minutes</text>
       <text
-        :fill="tealSub"
-        font-family="sans-serif"
-        font-size="11"
+        class="teal-sub sub"
         x="555"
         y="100"
         text-anchor="middle"
       >8 GB RAM, $5/mo</text>
 
-      <!-- Bottom note -->
       <text
-        :fill="subtitleColor"
-        font-family="sans-serif"
-        font-size="12"
+        class="note"
         x="340"
         y="144"
         text-anchor="middle"
@@ -244,35 +192,30 @@
   </div>
 </template>
 
-<script setup>
-const isDark = typeof window !== 'undefined'
-  ? window.matchMedia('(prefers-color-scheme: dark)').matches
-  : false
-
-const arrowColor = isDark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.35)'
-const subtitleColor = isDark ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.4)'
-const stepNum = isDark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.3)'
-
-const grayFill = isDark ? '#2C2C2A' : '#F1EFE8'
-const grayStroke = isDark ? '#5F5E5A' : '#B4B2A9'
-const grayTitle = isDark ? '#D3D1C7' : '#444441'
-
-const purpleFill = isDark ? '#26215C' : '#EEEDFE'
-const purpleStroke = isDark ? '#7F77DD' : '#7F77DD'
-const purpleTitle = isDark ? '#AFA9EC' : '#3C3489'
-const purpleSub = isDark ? '#7F77DD' : '#534AB7'
-
-const amberFill = isDark ? '#412402' : '#FAEEDA'
-const amberStroke = isDark ? '#BA7517' : '#BA7517'
-const amberTitle = isDark ? '#EF9F27' : '#633806'
-const amberSub = isDark ? '#BA7517' : '#854F0B'
-
-const tealFill = isDark ? '#04342C' : '#E1F5EE'
-const tealStroke = isDark ? '#1D9E75' : '#1D9E75'
-const tealTitle = isDark ? '#5DCAA5' : '#085041'
-const tealSub = isDark ? '#1D9E75' : '#0F6E56'
-</script>
+<script setup></script>
 
 <style scoped>
-.diagram { border-radius: 8px; overflow: hidden; }
+.rdf-diagram { border-radius: 8px; overflow: hidden; }
+svg text { font-family: sans-serif; }
+
+.label    { font-size: 14px; font-weight: 500; }
+.sub      { font-size: 12px; }
+.step-num { font-size: 11px; fill: light-dark(rgba(0,0,0,0.3), rgba(255,255,255,0.35)); }
+.note     { font-size: 12px; fill: light-dark(rgba(0,0,0,0.4), rgba(255,255,255,0.4)); }
+.arrow    { stroke: light-dark(rgba(0,0,0,0.4), rgba(255,255,255,0.5)); stroke-width: 1; fill: none; }
+
+.gray-box   { fill: light-dark(#F1EFE8, #2C2C2A); stroke: light-dark(#B4B2A9, #5F5E5A); stroke-width: 0.5; }
+.gray-title { fill: light-dark(#444441, #D3D1C7); }
+
+.purple-box   { fill: light-dark(#EEEDFE, #26215C); stroke: #7F77DD; stroke-width: 0.5; }
+.purple-title { fill: light-dark(#3C3489, #AFA9EC); }
+.purple-sub   { fill: light-dark(#534AB7, #7F77DD); }
+
+.amber-box   { fill: light-dark(#FAEEDA, #412402); stroke: #BA7517; stroke-width: 0.5; }
+.amber-title { fill: light-dark(#633806, #EF9F27); }
+.amber-sub   { fill: light-dark(#854F0B, #BA7517); }
+
+.teal-box  { fill: light-dark(#E1F5EE, #04342C); stroke: #1D9E75; stroke-width: 1; }
+.teal-title { fill: light-dark(#085041, #5DCAA5); }
+.teal-sub   { fill: light-dark(#0F6E56, #1D9E75); }
 </style>
