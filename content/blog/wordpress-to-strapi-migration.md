@@ -43,6 +43,9 @@ The translation data will then be read and migrated into a Strapi translation mo
 
 ## How it works
 
+::migration-stepper
+::
+
 ### Step 1: Connection Setup
 
 Simply provide your WordPress site URL and REST API credentials. The tool connects securely to your WordPress installation and reads all your content without requiring any modifications to your site.
@@ -113,6 +116,9 @@ Every migrated item is logged with timestamps and status. You can track exactly 
 Most of this is automated. Your involvement is mainly in the connection setup and final review steps.
 
 ## Real-World Impact
+
+::migration-impact-cards
+::
 
 One of my recent clients migrated a 200+ page WordPress site with WPML translations and extensive media libraries. The results:
 

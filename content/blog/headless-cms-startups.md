@@ -25,6 +25,9 @@ A headless CMS separates them. The CMS handles only content management and expos
 
 The CMS has no "head" (no frontend). Hence: headless.
 
+::headless-vs-traditional-diagram
+::
+
 ## The Problem With Starting on WordPress
 
 WordPress powers a huge portion of the web, and for good reason — it's fast to set up, there are plugins for everything, and non-technical people can manage content without developer help.
@@ -89,6 +92,9 @@ Not sure whether to build your frontend in Vue/Nuxt or React/Next.js? I wrote a 
 - [React certification](https://certificates.dev/react?friend=DEVNIK)
 
 *Affiliate links — I'm a partner of certificates.dev.*
+
+::cms-comparison-cards
+::
 
 ## When Headless Is NOT the Right Choice
 

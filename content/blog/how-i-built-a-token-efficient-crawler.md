@@ -81,6 +81,7 @@ Use the LLM to analyze a shop's search results page and generate a `JsonCssExtra
 Use the stored CSS schema directly. Pure CSS extraction — no LLM involved, no token cost per request.
 
 ::crawl-architecture-diagram
+::
 
 <!-- SVG diagram: two-phase crawl architecture -->
 <!-- Phase 1: Shop search page → Crawl4AI (raw HTML) → Gemini Flash Lite → store-overrides.json -->

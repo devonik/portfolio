@@ -34,6 +34,9 @@ Each of these is straightforward in isolation. Together, they're a significant s
 
 Security vulnerabilities don't announce themselves. A misconfigured token rotation, a missing rate limiter, an improperly stored refresh token — these are the things that get startups into trouble. And when a security issue surfaces 18 months in, you're the one patching it at 2am.
 
+::auth-comparison-diagram
+::
+
 ## What Supabase Auth Gives You Out of the Box
 
 Supabase Auth is built on top of GoTrue, a battle-tested auth server. Out of the box you get:
@@ -93,6 +96,9 @@ There are legitimate reasons to go custom or reach for a dedicated provider like
 **Highly specific session logic.** If you need very custom token claims, unusual session behaviours, or complex multi-tenant auth flows, rolling your own gives you full control.
 
 **You're already in the AWS ecosystem.** If your infrastructure is deeply AWS-native, Cognito integrates tightly with IAM, API Gateway, and Lambda — making it a natural fit despite its notoriously rough developer experience.
+
+::auth-decision-tree
+::
 
 ## My Personal Recommendation: 3 Questions
 

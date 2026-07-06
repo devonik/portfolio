@@ -20,7 +20,10 @@ All these formatters and the collaboration between them are very confusing, and 
 A very frustrating and time consuming process.
 [See my solution below](#solution)
 
-## Common problems that can be prevented or even solved by ESLint
+::eslint-before-after
+::
+
+## Common problems that can be prevented
 
 - *Syntax errors:* We developers know the problem. Missing a "," or "{" somewhere in the code, and in runtime an unreadable JavascriptError is happening. Followed by debugging for hours to have at one point the "AHA" effect. **ESLint can show the developer these syntax errors before running the application, saving him hours of debugging and preventing critical runtime errors.**
 
@@ -145,6 +148,9 @@ Add the following settings to your `.vscode/settings.json`:
   ]
 }
 ```
+
+::eslint-git-hooks-flow
+::
 
 ### Run ESLint before your git commit is finished (Recommended for team projects)
 

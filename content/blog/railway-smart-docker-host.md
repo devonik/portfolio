@@ -23,6 +23,9 @@ I needed something cheap, RAM-generous, and zero-ops for what is still an experi
 
 I looked at the obvious options:
 
+::railway-pricing-comparison
+::
+
 | Option | RAM | Cost | Ops overhead |
 |---|---|---|---|
 | Namecheap VPS upgrade | 4GB | ~$107/year | Manual setup + maintenance |
@@ -34,6 +37,9 @@ DigitalOcean would have worked technically, but at $24/month for 4GB it's hard t
 ## Railway
 
 [Railway](https://railway.com?referralCode=g1iHfn) is a deployment platform that takes a Docker image and runs it — no server config, no SSH, no maintenance. You point it at an image, set your environment variables, and it's live.
+
+::railway-deploy-flow
+::
 
 For Crawl4AI specifically, the setup was:
 
