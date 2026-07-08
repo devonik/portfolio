@@ -1,6 +1,6 @@
 ---
 title: "How to Migrate WordPress to Strapi Headless CMS (With 1,000+ Posts)"
-description: Step-by-step guide to migrating a WordPress site with 1,000+ posts and media to a Strapi headless CMS using a custom-built SaaS migration tool.
+description: Step-by-step guide to migrating a WordPress site with 1,000+ posts and media to a Strapi headless CMS using WPEscape, a purpose-built WordPress to Strapi migration tool.
 date: 2026-03-06
 image: /blog/wordpress-to-strapi.png
 minRead: 8
@@ -24,15 +24,17 @@ You can see the complete list of APIs at [WordPress REST API](https://developer.
 
 ## Why should I use your migration tool
 
+I've packaged everything below into a product: **[WPEscape](https://wpescape.dev)**, a tool to migrate WordPress to Strapi (and other modern headless CMSs) without hand-rolling your own scripts.
+
 Yes, you can build your own migration tool by fetching specific WordPress APIs, but there are some bottlenecks to consider:
 
 ### Time effort
 
-1. I have spent month's of research and development on this tool. You can save this time and focus on other features.
+1. I have spent months of research and development on this tool. You can save this time and focus on other features.
 2. You need to understand WordPress structure, including posts, custom post types, pages, menus, translations, and more.
 3. You need to set up Strapi CMS in a way that can be merged with your individual WordPress setup.
 
-### Other Problems with Wordpress
+### Other Problems with WordPress
 
 #### WPML Translations
 
@@ -76,7 +78,7 @@ Every piece of your content is carefully preserved during migration. Even comple
 
 ### Intelligent Content Parsing
 
-Our advanced HTML parser understands WordPress's various content formats - from traditional posts to WooCommerce products to custom post types. Each is converted to the appropriate Strapi structure.
+WPEscape's HTML parser understands WordPress's various content formats - from traditional posts to WooCommerce products to custom post types. Each is converted to the appropriate Strapi structure.
 
 ### Media Handling
 
@@ -131,12 +133,13 @@ One of my recent clients migrated a 200+ page WordPress site with WPML translati
 
 The migration tool is designed for agencies, freelancers, and businesses that want to modernize their web presence without the headache of manual content migration.
 
-**Ready to leave WordPress behind?** I'm currently building this SaaS tool and would love to hear from you!
+**Ready to leave WordPress behind?** I'm building this into a product called **[WPEscape](https://wpescape.dev)** and would love to hear from you!
 
 ### Get Early Access
 
 If you're interested in migrating your WordPress site to Strapi, I'd love to discuss your project:
 
+- **🚀 [WPEscape](https://wpescape.dev)** – See the tool and join the waitlist
 - **📅 [Book a Call](https://cal.com/devnik)** – Schedule a free consultation about your migration
 - **📧 [Email Me](mailto:niklas.grieger@devnik.dev)** – niklas.grieger@devnik.dev
 
@@ -151,7 +154,7 @@ After your migration is complete:
 - Enjoy better performance, security, and developer experience
 - Focus on growing your business instead of maintaining plugins
 
-Not sure whether to go with Vue/Nuxt or React/Next.js for your new frontend? I wrote a full comparison [here]. If you want to go deep on either framework, I've been working through the official certifications myself:
+Not sure whether to go with Vue/Nuxt or React/Next.js for your new frontend? I'm writing a full comparison (coming soon). If you want to go deep on either framework, I've been working through the official certifications myself:
 
 - [Vue certification](https://certificates.dev/vuejs?friend=DEVNIK)
 - [Nuxt certification](https://certificates.dev/nuxt?friend=DEVNIK)
