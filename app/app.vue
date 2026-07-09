@@ -21,9 +21,31 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Niklas Grieger'
+  titleTemplate: '%s - Niklas Grieger',
+  ogImage: '/profile.jpg',
+  twitterCard: 'summary_large_image'
 })
-defineOgImage({ url: '/profile.jpg' })
+
+useSchemaOrg([
+  definePerson({
+    name: 'Niklas Grieger',
+    image: '/profile.jpg',
+    jobTitle: 'Senior Full Stack Engineer',
+    email: 'niklas.grieger@devnik.dev',
+    url: 'https://devnik.dev',
+    sameAs: [
+      'https://www.linkedin.com/in/niklas-grieger-b98086152/',
+      'https://github.com/devonik',
+      'https://stackoverflow.com/users/6143720/devnik',
+      'https://www.npmjs.com/~devnik'
+    ]
+  }),
+  defineWebSite({
+    name: 'Niklas Grieger',
+    description: 'Senior Full Stack Engineer specializing in Vue, Nuxt, Node.js & AWS. Available for remote freelance.'
+  }),
+  defineWebPage()
+])
 
 const [{ data: navigation }, { data: files }] = await Promise.all([
   useAsyncData(

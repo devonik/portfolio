@@ -1,5 +1,5 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
-import { asOgImageCollection } from 'nuxt-og-image/content'
+import { defineSitemapSchema } from '@nuxtjs/sitemap/content'
 
 const createBaseSchema = () => z.object({
   title: z.string(),
@@ -37,12 +37,10 @@ const createTestimonialSchema = () => z.object({
 
 export default defineContentConfig({
   collections: {
-    content: defineCollection(
-      asOgImageCollection({
-        type: 'page',
-        source: '**/*.md'
-      })
-    ),
+    content: defineCollection({
+      type: 'page',
+      source: '**/*.md'
+    }),
     index: defineCollection({
       type: 'page',
       source: 'index.yml',
@@ -98,6 +96,7 @@ export default defineContentConfig({
         description: z.string().nonempty(),
         image: z.string().nonempty().editor({ input: 'media' }),
         url: z.string().optional(),
+        relatedBlog: z.string().optional(),
         tags: z.array(z.string()),
         date: z.date()
       })
@@ -109,7 +108,8 @@ export default defineContentConfig({
         minRead: z.number(),
         date: z.date(),
         image: z.string().nonempty().editor({ input: 'media' }),
-        author: createAuthorSchema()
+        author: createAuthorSchema(),
+        sitemap: defineSitemapSchema()
       })
     }),
     pages: defineCollection({

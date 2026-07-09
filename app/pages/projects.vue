@@ -84,18 +84,31 @@ useSeoMeta({
             </span>
           </template>
           <template #footer>
-            <NuxtLink
-              v-if="project.url"
-              :to="project.url"
-              target="_blank"
-              class="text-sm text-primary flex items-center"
-            >
-              View Project
-              <UIcon
-                name="i-lucide-arrow-right"
-                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-              />
-            </NuxtLink>
+            <div class="flex items-center gap-4">
+              <NuxtLink
+                v-if="project.url"
+                :to="project.url"
+                target="_blank"
+                class="text-sm text-primary flex items-center"
+              >
+                View Project
+                <UIcon
+                  name="i-lucide-arrow-right"
+                  class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                />
+              </NuxtLink>
+              <NuxtLink
+                v-if="project.relatedBlog"
+                :to="project.relatedBlog"
+                class="text-sm text-muted flex items-center gap-1 hover:text-primary"
+              >
+                <UIcon
+                  name="i-lucide-book-open"
+                  class="size-4"
+                />
+                Read the case study
+              </NuxtLink>
+            </div>
           </template>
           <img
             :src="project.image"

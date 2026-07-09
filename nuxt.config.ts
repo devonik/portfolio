@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     '@vueuse/nuxt',
-    'nuxt-og-image',
+    '@nuxtjs/seo',
     'motion-v/nuxt'
   ],
 
@@ -15,6 +15,13 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  site: {
+    url: process.env.NUXT_SITE_URL || 'https://devnik.dev',
+    name: process.env.NUXT_SITE_NAME || 'Niklas Grieger',
+    description: 'Senior Full Stack Engineer specializing in Vue, Nuxt, Node.js & AWS. Available for remote freelance.',
+    defaultLocale: 'en'
+  },
   runtimeConfig: {
     site: {
       url: process.env.NUXT_SITE_URL,
