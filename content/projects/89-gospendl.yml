@@ -4,7 +4,7 @@ description:
   As a search index, I am using Algolia, and the data is coming from 1,000+ different websites that include e-commerce, domain providers, E-SIM providers, and more.
   I implemented Crawl4AI as a crawler since it offers the best flexibility for my case - read more about it in my Blog "Exploring AI-Driven Web Crawling - A Beginner’s Journey".
   I created this website using Nuxt 4, Tailwind CSS, Node.js, Crawl4AI (Docker), and Algolia.
-image: /hero/project-gospendl.gif
+image: /hero/project-gospendl.mp4
 tags: ["Full-Stack Dev"]
 date: "2025"
 url: "https://gospendl.com/"

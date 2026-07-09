@@ -58,65 +58,84 @@ useSeoMeta({
         container: '!pt-0'
       }"
     >
-      <Motion
+      <template
         v-for="(project, index) in projects"
         :key="project.title"
-        :initial="{ opacity: 0, transform: 'translateY(10px)' }"
-        :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
-        :transition="{ delay: 0.2 * index }"
-        :in-view-options="{ once: true }"
       >
-        <UPageCard
-          :title="project.title"
-          :description="project.description"
-          :to="project.url"
-          orientation="horizontal"
-          variant="naked"
-          :reverse="index % 2 === 1"
-          class="group"
-          :ui="{
-            wrapper: 'max-sm:order-last'
-          }"
+        <Motion
+          :initial="{ opacity: 0, transform: 'translateY(10px)' }"
+          :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+          :transition="{ delay: 0.2 * index }"
+          :in-view-options="{ once: true }"
         >
-          <template #leading>
-            <span class="text-sm text-muted">
-              {{ new Date(project.date).getUTCFullYear() }}
-            </span>
-          </template>
-          <template #footer>
-            <div class="flex items-center gap-4">
-              <NuxtLink
-                v-if="project.url"
-                :to="project.url"
-                target="_blank"
-                class="text-sm text-primary flex items-center"
-              >
-                View Project
-                <UIcon
-                  name="i-lucide-arrow-right"
-                  class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-                />
-              </NuxtLink>
-              <NuxtLink
-                v-if="project.relatedBlog"
-                :to="project.relatedBlog"
-                class="text-sm text-muted flex items-center gap-1 hover:text-primary"
-              >
-                <UIcon
-                  name="i-lucide-book-open"
-                  class="size-4"
-                />
-                Read the case study
-              </NuxtLink>
-            </div>
-          </template>
-          <img
-            :src="project.image"
-            :alt="project.title"
-            class="object-contain w-100 max-h-80 rounded-lg"
+          <UPageCard
+            :title="project.title"
+            :description="project.description"
+            :to="project.url"
+            orientation="vertical"
+            variant="naked"
+            class="group text-center"
+            :ui="{
+              title: 'text-center',
+              description: 'text-center',
+              footer: 'justify-center'
+            }"
           >
-        </UPageCard>
-      </Motion>
+            <template #leading>
+              <span class="text-sm text-muted block text-center">
+                {{ new Date(project.date).getUTCFullYear() }}
+              </span>
+            </template>
+            <template #footer>
+              <div class="flex items-center justify-center gap-4">
+                <NuxtLink
+                  v-if="project.url"
+                  :to="project.url"
+                  target="_blank"
+                  class="text-sm text-primary flex items-center"
+                >
+                  View Project
+                  <UIcon
+                    name="i-lucide-arrow-right"
+                    class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                  />
+                </NuxtLink>
+                <NuxtLink
+                  v-if="project.relatedBlog"
+                  :to="project.relatedBlog"
+                  class="text-sm text-muted flex items-center gap-1 hover:text-primary"
+                >
+                  <UIcon
+                    name="i-lucide-book-open"
+                    class="size-4"
+                  />
+                  Read the case study
+                </NuxtLink>
+              </div>
+            </template>
+            <video
+              v-if="project.image?.endsWith('.mp4')"
+              :src="project.image"
+              :aria-label="project.title"
+              class="object-contain w-full max-h-80 rounded-lg mx-auto"
+              autoplay
+              muted
+              loop
+              playsinline
+            />
+            <img
+              v-else
+              :src="project.image"
+              :alt="project.title"
+              class="object-contain w-full max-h-80 rounded-lg mx-auto"
+            >
+          </UPageCard>
+        </Motion>
+        <USeparator
+          v-if="index < projects.length - 1"
+          class="my-8"
+        />
+      </template>
     </UPageSection>
   </UPage>
 </template>
