@@ -13,7 +13,7 @@ author:
 
 ## My journey
 
-I'm building [GoSpendl](https://go-spendl.vercel.app) — a product search platform for the Bitcoin community. Users can find Bitcoin-related products across hundreds of shops, and if they have a Nostr account, they can earn satsback cashback on purchases.
+I'm building [GoSpendl](https://gospendl.com/) — a product search platform for the Bitcoin community. Users can find Bitcoin-related products across hundreds of shops, and if they have a Nostr account, they can earn satsback cashback on purchases.
 
 To show products, I need to crawl many different e-commerce websites dynamically — triggered by user search queries, not upfront. Traditional crawling requires you to define a CSS schema per website, and the moment a shop redesigns their page, your schema breaks silently.
 
