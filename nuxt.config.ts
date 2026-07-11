@@ -31,11 +31,11 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
+  // @ts-expect-error nuxt 4 marks `nitro` as `never` at the type level (see @nuxt/schema),
+  // but the runtime still honors this block. safe to keep until upstream provides a typed replacement.
   nitro: {
     prerender: {
-      routes: [
-        '/'
-      ],
+      routes: ['/'],
       crawlLinks: true
     }
   },

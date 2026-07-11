@@ -132,7 +132,7 @@ useSeoMeta({
           </UPageCard>
         </Motion>
         <USeparator
-          v-if="index < projects.length - 1"
+          v-if="projects && index < projects.length - 1"
           class="my-8"
         />
       </template>
