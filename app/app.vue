@@ -22,7 +22,7 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s',
-  ogImage: '/og-cover.jpg',
+  ogImage: '/og-image.png',
   twitterCard: 'summary_large_image'
 })
 
