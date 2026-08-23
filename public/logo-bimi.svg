@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 44 44">
+  <title>Devnik</title>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="90.6%" y2="42.3%">
+      <stop offset="0%" stop-color="#00C4EE" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="44" height="44" fill="#022239"/>
+  <g transform="translate(2 1.95)">
+    <path d="M26.7 13.4L25.2 16l6.6 4-6.6 4 1.5 2.6 8.7-5.3v-2.6l-8.7-5.3zm-13.4 0l-8.7 5.3v2.6l8.7 5.3 1.5-2.6-6.6-4 6.6-4-1.5-2.6zm3 14.2l2.9.7 3.5-15.8-2.9-.7-3.5 15.8z" fill="url(#g)"/>
+  </g>
+</svg>
