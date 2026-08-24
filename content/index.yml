@@ -105,6 +105,13 @@ certifications:
       color: "#61DAFB"
       url: "https://certificates.dev/react/certificates/a064961e-6ed7-48be-9650-c7af5d1903d7"
 testimonials:
+  - quote: "Highly recommend Niklas! As the founder of kinderleicht, having a professional website was especially important to me—and at first, I was unsure about outsourcing this task. Today, I’m more than happy! Niklas works quickly, is reliable, and accommodates individual requests—from design to the booking system. What’s especially great: There are easy-to-follow instructions for everything I can manage on my own. I highly recommend him, even for smaller businesses!"
+    author:
+      name: 'Charline Becker'
+      description: 'CEO at Kinderleicht'
+      avatar:
+        src: '/hero/testimonial-charline-becker.jpeg'
+        srcset: '/hero/testimonial-charline-becker.jpeg'
   - quote: "Niklas knows his stuff, works reliably, and delivers high quality. I can highly recommend his services. He was an asset to our team, quickly familiarized himself with the technology and our development processes, and was thus able to work through tickets and tasks independently in a timely manner."
     author:
       name: 'Niklas Donges'
