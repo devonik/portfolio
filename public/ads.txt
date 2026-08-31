@@ -1,0 +1,2 @@
+google.com, pub-4609998981070446, DIRECT, f08c47fec0942fa0
+SUBDOMAIN=blog.devnik.dev
