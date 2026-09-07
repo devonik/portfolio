@@ -29,7 +29,7 @@ Falls doch: CMC, nicht VMC — die 12-Monats-Nutzungspflicht ist erfüllt
 Doppelte Ausrichtung heißt: Weiterleitungen brechen zwar SPF, DKIM überlebt sie
 aber. Die Verschärfung ist damit risikoarm abgesichert.
 
-## Phase 1 — bis 20.09.2026, Beobachtung
+## Phase 1 — Beobachtung
 
 Wöchentlicher Postmark-Digest (erster Bericht um den 30.08.). Zwei Kriterien,
 beide müssen erfüllt sein:
@@ -42,18 +42,59 @@ Besonders achten auf: sendet die Portfolio-Seite selbst Mails (Kontaktformular)?
 Der Port25-Test deckte nur den Weg über `smtp.privateemail.com` ab. Jede andere
 Quelle taucht erst in den Reports auf.
 
-## Phase 2 — Woche 5–7, Rampe
+### Stand 07.09.2026 — devnik.dev
 
-Nach jedem Schritt eine Woche warten, Digest prüfen, Testmail an Gmail
-(Nachricht → Original anzeigen → SPF/DKIM/DMARC müssen alle PASS sein):
+- Digest 1 (24.–31.08.): 4 Mails, **100 % ausgerichtet**, ausschließlich
+  Namecheap-IPs (104.207.68.48, 198.54.127.67, 63.250.43.113, 63.250.43.122)
+- Digest 2 (31.08.–07.09.): erwartet am 07.09. gegen 23:20 MESZ, zum Zeitpunkt
+  dieser Notiz noch nicht eingegangen
+
+Zusätzlich am 01.09. unabhängig vom Digest geprüft:
+
+- **Blog-App (EC2)** → authentifiziert (`ESMTPA`) über den privateemail-SMTP.
+  Kopfzeilen beim Empfänger: `dkim=pass header.d=devnik.dev`, `spf=pass`,
+  `Return-Path: <niklas.grieger@devnik.dev>` — beide Mechanismen ausgerichtet.
+- **Gmail „Senden als"** → `mail.privateemail.com`, Port 587 TLS. Kein Versand
+  über Google-IPs, also kein Alignment-Bruch.
+- **Portfolio-Seite** → sendet nichts. Nur `mailto:`-Links in
+  `app/app.config.ts:30` und `content/index.yml:180`, keine Mail-Bibliothek in
+  `package.json`, keine SMTP-Credentials. Die offene Frage oben ist damit
+  beantwortet.
+- **Absender-Audit** über ~10 Wochen Postausgang: ausschließlich direkte
+  1:1-Korrespondenz an Kunden und Recruiter. Keine Mailinglisten, kein
+  Drittanbieter, der als `devnik.dev` sendet.
+
+## Phase 2 — Rampe
+
+### devnik.dev — am 01.09.2026 in einem Schritt auf pct=100
+
+Abweichung vom ursprünglichen Plan. Statt der Stufen 25 → 50 → 100 wurde am
+01.09. direkt gesetzt:
+
+    v=DMARC1; p=quarantine; pct=100; rua=mailto:re+b4utbfeydgm@dmarc.postmarkapp.com; adkim=r; aspf=r
+
+Zweck der Rampe war, unbekannte Versandquellen schrittweise aufzudecken. Diese
+Frage war zu dem Zeitpunkt bereits anders und vollständiger beantwortet: durch
+den Port25-Bericht vom 23.08. (doppelte Ausrichtung, auch strikt bestehend) und
+den Absender-Audit aus Phase 1. Ein Rückschritt auf `pct=25` hätte den Schutz
+gesenkt und BIMI um einen Monat verzögert, ohne eine neue Erkenntnis zu liefern.
+
+Die BIMI-Voraussetzung ist damit **seit 01.09. erfüllt** statt ab 05.10.
+Verifiziert über `bimi_status.sh` (DoH): `p=quarantine bei pct=100 — OK`.
+
+Offen: `p=reject` (Termin 22.09.). Für BIMI nicht nötig, siehe Phase 4.
+
+### kinderleicht-hannover.de — Rampe steht noch aus
+
+Unverändert dreistufig, weil hier noch **kein** Versandweg per Testmail
+verifiziert ist. Nach jedem Schritt eine Woche warten, Digest prüfen, Testmail
+an Gmail (Nachricht → Original anzeigen → SPF/DKIM/DMARC müssen alle PASS sein):
 
 | Datum (frühestens) | Wert                   | Kontrolle                    |
 |--------------------|------------------------|------------------------------|
-| 20.09.2026         | `p=quarantine; pct=25` | Testmail im Gmail-Posteingang|
-| 27.09.2026         | `pct=50`               | Digest ohne neue Fehlschläge |
-| 04.10.2026         | `pct=100`              | `bimi_status.sh` meldet OK   |
-
-Ab dem letzten Schritt ist BIMI aktiv — der Record steht bereits.
+| 21.09.2026         | `p=quarantine; pct=25` | Testmail im Gmail-Posteingang|
+| 28.09.2026         | `pct=50`               | Digest ohne neue Fehlschläge |
+| 05.10.2026         | `pct=100`              | `bimi_status.sh` meldet OK   |
 
 Bei einem FAIL sofort eine Stufe zurück.
 
@@ -61,6 +102,8 @@ Kein `sp=` setzen — Subdomains erben dann die Hauptpolicy. `sp=none` würde de
 Schutz für Subdomains wieder aufheben.
 
 ## Phase 3 — BIMI-Verifikation
+
+Für devnik.dev seit 01.09. durchführbar (siehe Phase 2), nicht erst ab Oktober.
 
 1. `./scripts/bimi_status.sh devnik.dev` — alles grün
 2. Gegenprüfung: mxtoolbox.com/bimi.aspx
@@ -89,7 +132,7 @@ verschärft werden darf:**
 
 | Selector                  | Größe    | Wofür                          |
 |---------------------------|----------|--------------------------------|
-| `privateemail._domainkey` | 2048 Bit | Charlys Postfach `info@`       |
+| `spacemail._domainkey`    | 2048 Bit | Charlys Postfach `info@`       |
 | `resend._domainkey`       | 1024 Bit | Transaktionsmails der App      |
 
 Bricht einer davon, fallen entweder Charlys persönliche Mails oder die
@@ -97,14 +140,22 @@ Buchungsbestätigungen weg. Vor der Rampe deshalb ZWEI Nachweise nötig:
 - Mail aus Charlys Postfach an `check-auth@verifier.port25.com`
 - Ein Resend-Versand, geprüft über die Kopfzeilen beim Empfänger
 
-Status: `./scripts/bimi_status.sh kinderleicht-hannover.de privateemail`
+Status: `./scripts/bimi_status.sh kinderleicht-hannover.de spacemail`
 (bzw. `… resend` für den zweiten Weg)
+
+> Korrigiert am 07.09.2026: Der Selector heißt `spacemail`, nicht `privateemail`.
+> Namecheap hat Private Email zu Spacemail umbenannt, der SPF-Include zeigt
+> konsistent auf `spf.spacemail.com`. Der alte Name lieferte ein „kein
+> DKIM-Record"-FEHL, obwohl der 2048-Bit-Schlüssel publiziert ist.
 
 ### rua gesetzt am 23.08.2026
 
-    v=DMARC1; p=none; rua=mailto:re+cikepvwzjgt@dmarc.postmarkapp.com; adkim=r; aspf=r
+    v=DMARC1; p=none; rua=mailto:re+bx4ip70wlgw@dmarc.postmarkapp.com; adkim=r; aspf=r
 
 Record-ID `rec_4bf447795fab44196673348f`. Beobachtungsphase läuft seit 23.08.
+Die `rua`-Adresse war hier bis 07.09. falsch dokumentiert (`re+cikepvwzjgt@`);
+live steht und stand `re+bx4ip70wlgw@`. Vermutlich beim Neuanlegen entstanden —
+Vercel DNS kennt kein Update.
 parallel zu devnik.dev. Postmark generiert `pct=100` und `sp=none` mit — beides
 entfernt: 100 ist der Default und stört bei der Rampe, `sp=none` würde später den
 Schutz für Subdomains aushebeln.
@@ -120,6 +171,7 @@ Weg geprüft. Nötig sind zwei Nachweise:
 
 1. **Postfach** — Mail von `info@kinderleicht-hannover.de` an
    `check-auth@verifier.port25.com`. Erwartung: `header.d=kinderleicht-hannover.de`
+   mit Selector `spacemail` (nicht `privateemail`, siehe oben)
 2. **Resend** — echten Versand auslösen, beim Empfänger die Kopfzeilen prüfen.
    Der Return-Path läuft über `send.kinderleicht-hannover.de` (Amazon SES), SPF
    ist dort also anders ausgerichtet als beim Postfach — DKIM muss tragen.
