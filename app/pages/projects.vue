@@ -71,7 +71,6 @@ useSeoMeta({
           <UPageCard
             :title="project.title"
             :description="project.description"
-            :to="project.url"
             orientation="vertical"
             variant="naked"
             class="group text-center"
