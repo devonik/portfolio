@@ -129,6 +129,20 @@ useSeoMeta({
               :alt="project.title"
               class="object-contain w-full max-h-80 rounded-lg mx-auto"
             >
+            <div
+              v-if="project.tech?.length"
+              class="mt-4 flex flex-wrap justify-center gap-2"
+            >
+              <UBadge
+                v-for="item in project.tech"
+                :key="item.name"
+                :icon="item.icon"
+                :label="item.name"
+                color="neutral"
+                variant="subtle"
+                size="sm"
+              />
+            </div>
           </UPageCard>
         </Motion>
         <USeparator

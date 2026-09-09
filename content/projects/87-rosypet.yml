@@ -1,9 +1,24 @@
 title: Portal with features for veterinarians and pet owners
-description: 
-  This Portal brings digital features into the veterinarians business.
-  Features as Video Calls, Chat communication, Pet catalog and much more connects veterinarian and pet owner in a digital way.
-  Used Technologies are Vue3, TailwindCSS, PWA, SignalIO, OneSignal, NodeJs, and Gitlab.
+description: |
+  This portal brings digital features into a veterinary practice: live video consultations built on Daily.co, chat communication, a pet catalog and more, connecting vets and pet owners. Live product; I stay on-call for bugs and new features and hold a stake in the company.
 image: /hero/project-rosypet.mp4
 tags: ["Full-Stack Dev"]
+tech:
+  - name: "Vue"
+    icon: "i-simple-icons-vuedotjs"
+  - name: "Tailwind CSS"
+    icon: "i-simple-icons-tailwindcss"
+  - name: "PWA"
+    icon: "i-simple-icons-pwa"
+  - name: "Daily.co"
+    icon: "i-lucide-video"
+  - name: "Socket.IO"
+    icon: "i-simple-icons-socketdotio"
+  - name: "OneSignal"
+    icon: "i-lucide-bell"
+  - name: "Node.js"
+    icon: "i-simple-icons-nodedotjs"
+  - name: "GitLab"
+    icon: "i-simple-icons-gitlab"
 date: "2025"
 url: "https://rosypet.com/"

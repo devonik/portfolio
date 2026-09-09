@@ -1,5 +1,19 @@
 title: Senior Vue.js Developer
-description: I supported Smart Agency as a Senior Vue Developer for 4 months to get ready with their production launch. This project ask the User specific questions, and it's generating a production ready website powered by OpenAI. The project is written in Vue3, Nuxt3, NodeJs and hosted in AWS. The project team were around 80 people, and we worked in a monorepo powered by turbo repo.
+description: |
+  Supported Smart Agency as a Senior Vue Developer for 4 months to get them ready for their production launch. The product asks the user a set of questions and generates a production-ready website powered by OpenAI. The team was around 80 people, working in a Turborepo monorepo.
 image: /hero/project-smart-agency.mp4
 tags: ["Front-End Dev"]
+tech:
+  - name: "Vue"
+    icon: "i-simple-icons-vuedotjs"
+  - name: "Nuxt"
+    icon: "i-simple-icons-nuxt"
+  - name: "Node.js"
+    icon: "i-simple-icons-nodedotjs"
+  - name: "AWS"
+    icon: "i-simple-icons-amazonwebservices"
+  - name: "OpenAI"
+    icon: "i-simple-icons-openai"
+  - name: "Turborepo"
+    icon: "i-simple-icons-turborepo"
 date: "2025"

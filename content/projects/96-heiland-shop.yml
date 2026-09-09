@@ -1,6 +1,16 @@
 title: Lead developer - E-Commerce B2B shop for veterinary business
-description: Migrated monolithic systems to microservices, improving deployment efficiency by 40%. Led key decisions and implementations in cloud infrastructure design, migration strategies, and backend architecture using Node.js to enhance scalability and performance. Migrated legacy frontends to Vue3 and Nuxt3, and rebuilt backends as modular microservices hosted on AWS Lambda and Beanstalk.
+description: |
+  Migrated monolithic systems to microservices, improving deployment efficiency by 40%. Led key decisions and implementation across cloud infrastructure design, migration strategy and backend architecture, using Node.js for scalability and performance. Migrated legacy frontends to Vue3 and Nuxt3, and rebuilt backends as modular microservices on AWS Lambda and Beanstalk.
 image: /hero/heiland-logo.png
 tags: ["Full-Stack Dev"]
+tech:
+  - name: "Vue"
+    icon: "i-simple-icons-vuedotjs"
+  - name: "Nuxt"
+    icon: "i-simple-icons-nuxt"
+  - name: "Node.js"
+    icon: "i-simple-icons-nodedotjs"
+  - name: "AWS"
+    icon: "i-simple-icons-amazonwebservices"
 date: "2024"
 url: "https://heiland.com/"

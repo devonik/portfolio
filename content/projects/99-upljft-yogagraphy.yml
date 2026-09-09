@@ -1,5 +1,11 @@
 title: Yogagraphy generator for Christmas cards
-description: In this Project, the agency made yogagraphy's from people for every A-Z character. We sent Christmas cards to every agency's customer with an automated email campaign through Mailchimp. I built an REST API with Laravel to generate the Christmas card with the customer name (generated from yogagraphy pictures). The email template will be uploaded to Mailchimp so that it can be sent to the customers on Christmas day.
+description: |
+  The agency made "yogagraphy" letters from people posing as each character A to Z. We sent Christmas cards to every agency customer through an automated email campaign. I built a Laravel REST API that generates a card spelling the customer's name from the yogagraphy pictures, then uploads the email template to Mailchimp for sending on Christmas day.
 image: /hero/project-upljft-yogagraphy.jpeg
 tags: ["Full-Stack Dev"]
+tech:
+  - name: "Laravel"
+    icon: "i-simple-icons-laravel"
+  - name: "Mailchimp"
+    icon: "i-simple-icons-mailchimp"
 date: "2020"

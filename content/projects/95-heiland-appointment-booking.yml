@@ -1,5 +1,13 @@
 title: Appointment Booking Platform for veterinarians
-description: In this tool, pet owners are able to book appointments with a clinic. This white label project is fully customizable for each clinic that uses the shop. The clinic gets a calendar and can set his consultation hours, the selectable symptoms and more. The project is built in Vue3 and a Java Spring Boot Service for the calculation of the available time slots. The main challenge was to keep the time slots in sync, since they can be booked from different sources.
+description: |
+  A white-label tool that lets pet owners book appointments with a clinic, fully customizable per clinic: each one sets its own consultation hours, selectable symptoms and more. The frontend is Vue, backed by a Java Spring Boot service that computes available time slots. The main challenge was keeping slots in sync when they can be booked from several sources at once.
 image: /hero/project-heiland-appointment-booking.mp4
 tags: ["Full-Stack Dev"]
+tech:
+  - name: "Vue"
+    icon: "i-simple-icons-vuedotjs"
+  - name: "Java"
+    icon: "i-simple-icons-openjdk"
+  - name: "Spring Boot"
+    icon: "i-simple-icons-springboot"
 date: "2024"

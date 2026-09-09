@@ -1,10 +1,23 @@
+description: |
+  A product search for the Bitcoin community: it shows products that can be paid for with Bitcoin, offers Bitcoin discounts, or pays cashback in sats. The search index is Algolia, fed by a crawler that pulls product data from 1,000+ shops (e-commerce, domain providers, eSIM providers and more). I built the crawler on Crawl4AI, which discovers a reusable CSS extraction schema per shop once so production crawls run without per-request LLM cost. Users authenticate through Nostr rather than a classic login. Built solo.
 title: Website for price comparison within the bitcoin community
-description: 
-  This website shows diverse products that can be paid for with Bitcoin, offers Bitcoin discounts, or offers cashback in the form of bitcoins. 
-  As a search index, I am using Algolia, and the data is coming from 1,000+ different websites that include e-commerce, domain providers, E-SIM providers, and more.
-  I implemented Crawl4AI as a crawler since it offers the best flexibility for my case - read more about it in my Blog "Exploring AI-Driven Web Crawling - A Beginner’s Journey".
-  I created this website using Nuxt 4, Tailwind CSS, Node.js, Crawl4AI (Docker), and Algolia.
 image: /hero/project-gospendl.mp4
 tags: ["Full-Stack Dev"]
+tech:
+  - name: "Nuxt"
+    icon: "i-simple-icons-nuxt"
+  - name: "Tailwind CSS"
+    icon: "i-simple-icons-tailwindcss"
+  - name: "Node.js"
+    icon: "i-simple-icons-nodedotjs"
+  - name: "Crawl4AI"
+    icon: "i-lucide-bot"
+  - name: "Docker"
+    icon: "i-simple-icons-docker"
+  - name: "Algolia"
+    icon: "i-simple-icons-algolia"
+  - name: "Nostr"
+    icon: "i-lucide-key-round"
 date: "2025"
 url: "https://gospendl.com/"
+relatedBlog: "/blog/gospendl-builder-story"

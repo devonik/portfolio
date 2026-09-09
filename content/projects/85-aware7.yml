@@ -1,10 +1,19 @@
 title: WordPress to Strapi Migration & Next.js Rebuild for AWARE7
 description: |
-  Migrated a WordPress site with 1,000+ posts, Custom Post Types, WPML translations, menus and categories to a Strapi headless CMS. Built intelligent media cleanup (only actually used assets transferred) and a new React/Next.js frontend with Stripe integration. This project became the foundation for WPShift, an open-source migration tool currently in development.
-
-  **Tech:** React, Next.js, Strapi, Stripe, WordPress
+  Migrated a WordPress site with 1,000+ posts, Custom Post Types, WPML translations, menus and categories to a Strapi headless CMS. Built intelligent media cleanup (only actually used assets transferred) and a new React/Next.js frontend with Stripe integration. This project became the foundation for WPEscape, a WordPress-to-headless migration tool currently in development.
 image: /blog/wordpress-to-strapi.png
 tags: ["Full-Stack Dev"]
+tech:
+  - name: "React"
+    icon: "i-simple-icons-react"
+  - name: "Next.js"
+    icon: "i-simple-icons-nextdotjs"
+  - name: "Strapi"
+    icon: "i-simple-icons-strapi"
+  - name: "Stripe"
+    icon: "i-simple-icons-stripe"
+  - name: "WordPress"
+    icon: "i-simple-icons-wordpress"
 date: "2026"
 url: "https://aware7.de/"
 relatedBlog: "/blog/wordpress-to-strapi-migration"

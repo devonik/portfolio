@@ -98,6 +98,10 @@ export default defineContentConfig({
         url: z.string().optional(),
         relatedBlog: z.string().optional(),
         tags: z.array(z.string()),
+        tech: z.array(z.object({
+          name: z.string().nonempty(),
+          icon: z.string().nonempty()
+        })).optional(),
         date: z.date()
       })
     }),

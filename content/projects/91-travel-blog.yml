@@ -1,7 +1,14 @@
 title: My personal travel blog
-description: 
-  One of my hobbies is traveling and I started sharing experiences by writing my own blog. I created this Website with Nuxt3, NuxtContent and TailwindCSS.
+description: |
+  One of my hobbies is traveling, and I started sharing experiences by writing my own blog.
 image: /hero/project-blog.mp4
 tags: ["Full-Stack Dev"]
+tech:
+  - name: "Nuxt"
+    icon: "i-simple-icons-nuxt"
+  - name: "Nuxt Content"
+    icon: "i-lucide-file-text"
+  - name: "Tailwind CSS"
+    icon: "i-simple-icons-tailwindcss"
 date: "2025"
 url: "https://blog.devnik.dev/"
