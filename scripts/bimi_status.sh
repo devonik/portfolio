@@ -49,9 +49,17 @@ fi
 
 # --- DMARC ---
 echo; echo "DMARC"
-dmarc=$(txt "_dmarc.${DOMAIN}" | grep '^v=DMARC1' | head -1)
+dmarc_all=$(txt "_dmarc.${DOMAIN}" | grep '^v=DMARC1')
+dmarc_n=$(printf '%s' "$dmarc_all" | grep -c . )
+dmarc=$(printf '%s\n' "$dmarc_all" | head -1)
 if [ -z "$dmarc" ]; then
   bad "kein DMARC-Record - BIMI unmoeglich"
+elif [ "$dmarc_n" -gt 1 ]; then
+  bad "$dmarc_n DMARC-Records auf _dmarc.$DOMAIN"
+  printf '%s\n' "$dmarc_all" | while IFS= read -r r; do info "-> $r"; done
+  info "RFC 7489: bei mehreren Records behandeln Empfaenger die Domain, als"
+  info "haette sie GAR KEINEN. Keine Policy, keine Reports. Genau einen behalten."
+  info "Vercel kennt kein Update: 'vercel dns ls' + 'vercel dns rm <id>'"
 else
   info "$dmarc"
   policy=$(echo "$dmarc" | grep -oE 'p=[a-z]+' | head -1 | cut -d= -f2)
@@ -79,9 +87,14 @@ fi
 
 # --- BIMI ---
 echo; echo "BIMI"
-bimi=$(txt "default._bimi.${DOMAIN}" | grep '^v=BIMI1' | head -1)
+bimi_all=$(txt "default._bimi.${DOMAIN}" | grep '^v=BIMI1')
+bimi_n=$(printf '%s' "$bimi_all" | grep -c . )
+bimi=$(printf '%s\n' "$bimi_all" | head -1)
 if [ -z "$bimi" ]; then
   warn "kein BIMI-Record unter default._bimi"
+elif [ "$bimi_n" -gt 1 ]; then
+  bad "$bimi_n BIMI-Records auf default._bimi.$DOMAIN - genau einen behalten"
+  printf '%s\n' "$bimi_all" | while IFS= read -r r; do info "-> $r"; done
 else
   info "$bimi"
   url=$(echo "$bimi" | grep -oE 'l=[^;]+' | head -1 | cut -d= -f2- | xargs)

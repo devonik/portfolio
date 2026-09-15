@@ -112,22 +112,47 @@ Verifiziert über `bimi_status.sh` (DoH): `p=quarantine bei pct=100 — OK`.
 
 Offen: `p=reject` (Termin 22.09.). Für BIMI nicht nötig, siehe Phase 4.
 
-### kinderleicht-hannover.de — Rampe steht noch aus
+### kinderleicht-hannover.de — Rampe läuft seit 15.09.2026
 
-Unverändert dreistufig, weil hier noch **kein** Versandweg per Testmail
-verifiziert ist. Nach jedem Schritt eine Woche warten, Digest prüfen, Testmail
-an Gmail (Nachricht → Original anzeigen → SPF/DKIM/DMARC müssen alle PASS sein):
+Beide Versandwege sind verifiziert (08.09.), beide Freigabekriterien erfüllt
+(Digests 30.08.–06.09. und 07.–14.09., je 100 %). Stufe 1 wurde deshalb am
+15.09. vorgezogen — sechs Tage früher als geplant, weil der ursprüngliche Termin
+(21.09.) auf den letzten Tag einer Reise fiel und DNS-Änderungen unterwegs die
+schlechtere Variante sind.
 
-| Datum (frühestens) | Wert                   | Kontrolle                    |
-|--------------------|------------------------|------------------------------|
-| 21.09.2026         | `p=quarantine; pct=25` | Testmail im Gmail-Posteingang|
-| 28.09.2026         | `pct=50`               | Digest ohne neue Fehlschläge |
-| 05.10.2026         | `pct=100`              | `bimi_status.sh` meldet OK   |
+| Datum      | Wert                   | Status                              |
+|------------|------------------------|-------------------------------------|
+| 15.09.2026 | `p=quarantine; pct=25` | ✅ gesetzt, genau ein Record bestätigt |
+| 23.09.2026 | `pct=50`               | offen, nach Digest vom 21.09.        |
+| 30.09.2026 | `pct=100`              | offen, nach Digest vom 28.09. → BIMI |
+
+Nach jedem Schritt eine Woche warten und den Digest prüfen. Worauf achten: ob im
+`amazonses.com`-Block weiterhin `SPF 0 % / DKIM 100 %` steht. Solange DKIM dort
+auf 100 % bleibt, trägt der Resend-Weg.
 
 Bei einem FAIL sofort eine Stufe zurück.
 
 Kein `sp=` setzen — Subdomains erben dann die Hauptpolicy. `sp=none` würde den
 Schutz für Subdomains wieder aufheben.
+
+#### ⚠️ Zwischenfall am 15.09.2026: zwei DMARC-Records
+
+Beim Setzen von Stufe 1 lief nur das `vercel dns add` durch, nicht das
+vorangehende `rm`. Danach standen kurzzeitig **zwei** `_dmarc`-TXT-Records
+nebeneinander (`p=none` und `p=quarantine; pct=25`).
+
+Wirkung: Nach RFC 7489 behandeln Empfänger eine Domain mit mehreren
+DMARC-Records so, als hätte sie **gar keinen**. Kein Schutz, keine Reports — also
+schlechter als der Ausgangszustand. Zugestellt wurde weiterhin alles, der Fehler
+war damit von außen unsichtbar.
+
+Gefunden wurde es nur durch eine rohe DoH-Abfrage nebenher. **`bimi_status.sh`
+meldete es nicht** — es nahm mit `head -1` den ersten Treffer und gab grünes
+Licht. Am 15.09. um eine Zählprüfung ergänzt: mehr als ein `v=DMARC1`- bzw.
+`v=BIMI1`-Record führt jetzt zu FEHL samt Auflistung aller gefundenen Records.
+
+Konsequenz für die verbleibenden Stufen: Nach jedem `rm`/`add` bei Vercel
+`bimi_status.sh` laufen lassen, bevor man den Schritt als erledigt verbucht.
 
 ## Phase 3 — BIMI-Verifikation
 
