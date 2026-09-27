@@ -1,0 +1,95 @@
+title: Pikuro Privacy Policy
+description: How the Pikuro app handles your data. Your photos and videos never leave your phone.
+content: |
+  ## 1. Data Controller
+
+  The party responsible for processing data in the Pikuro app within the meaning of the General Data Protection Regulation (GDPR) is:
+
+  **DEVNIK LLC**
+  30 N Gould St, Ste R
+  Sheridan, Wyoming 82801
+  United States of America
+  Represented by: Niklas Grieger, Managing Member
+  Email: niklas.grieger@devnik.dev
+
+  ## 2. In Short
+
+  - Your photos and videos **stay on your phone**. Pikuro never uploads, copies to a server or analyzes them anywhere but on your device.
+  - There is **no account, no advertising and no tracking**. Pikuro does not sell or share data for advertising.
+  - Pikuro only sends data in three cases: when you search for CapCut templates, when something goes wrong (error reports), and when it checks for app updates. Each is described below.
+
+  ## 3. Your Photos and Videos
+
+  Pikuro asks for access to your photos and videos because sorting them is its core function. Everything you do in the app happens on your device:
+
+  - Your decisions (keep, delete, album), series, album names and settings are stored in a local database inside the app. They are not transmitted anywhere.
+  - Media are only deleted or copied into albums when you tap **Apply** and confirm the system dialog of your phone.
+  - Uninstalling the app removes this local data. Media you deleted with Pikuro are deleted by your phone's system and cannot be restored by Pikuro.
+
+  You can limit the access to selected photos in your phone's settings at any time; Pikuro then only works with that selection.
+
+  ## 4. Data Sent by the App
+
+  ### 4.1 CapCut template search
+
+  When you look for a CapCut template for an album, the app sends the search topic (by default the album's name, which you can edit) and the number of photos and videos in the album to Pikuro's template service. No photos, videos, file names or device identifiers are sent.
+
+  The service stores each search (time, topic, number of clips, number of results, duration) to cache results and to limit how often it contacts CapCut. These entries are not linked to you or your device. The service is hosted by Vercel Inc. (USA) with a database by Neon (Databricks, Inc., USA); as with any web request, the hosting provider briefly processes your IP address in its server logs for secure operation.
+
+  When you tap a template, it opens in the CapCut app or on capcut.com. From then on, CapCut's own [privacy policy](https://www.capcut.com/clause/privacy) applies.
+
+  Legal basis: providing the feature you requested (Art. 6 (1) lit. b GDPR).
+
+  ### 4.2 Error reports
+
+  If the app crashes or runs into an error, it sends a technical report to Sentry (Functional Software, Inc., USA; data stored in the EU, Frankfurt). A report contains the error and where in the app's code it happened, the app version, your phone's model and operating system version, and the steps in the app shortly before the error (for example which screen was open). Reports never contain your photos or videos and are not linked to your name or an account. Sentry deletes them after 30 days at the latest.
+
+  Legal basis: our legitimate interest in finding and fixing errors (Art. 6 (1) lit. f GDPR).
+
+  ### 4.3 Screen recording with error reports (optional, off by default)
+
+  In the settings you can turn on **Screen recording with error reports**. Pikuro then keeps the last minute of taps and screens on your phone and only sends it along when an error occurs; without an error, nothing is sent. Before anything leaves your phone, **all photos, videos, graphics and text are masked** on the device, so the recording only shows the layout of the app and where you tapped. You can turn this off at any time; the change applies the next time you open the app.
+
+  Legal basis: your consent (Art. 6 (1) lit. a GDPR), which you can withdraw at any time via the same setting.
+
+  ### 4.4 App updates
+
+  When you open the app, it checks with Expo (650 Industries, Inc., USA), the platform Pikuro is built with, whether a small update is available, and downloads it in the background. For this, your phone sends technical information such as the app version, the platform and your IP address. No personal content is sent.
+
+  Legal basis: our legitimate interest in keeping the app working and secure (Art. 6 (1) lit. f GDPR).
+
+  ## 5. Google Play
+
+  Pikuro is distributed through Google Play. Google processes data about your download and installation under its own [privacy policy](https://policies.google.com/privacy).
+
+  ## 6. Transfers outside the EU
+
+  Where service providers are located outside the EU/EEA, appropriate safeguards (e.g. EU Standard Contractual Clauses or the EU–U.S. Data Privacy Framework) are in place.
+
+  ## 7. Children
+
+  Pikuro is not directed at children under 16.
+
+  ## 8. Your Rights under the GDPR
+
+  You have the right to:
+
+  - Access the personal data I hold about you (Art. 15 GDPR)
+  - Have inaccurate data rectified (Art. 16 GDPR)
+  - Have your data erased (Art. 17 GDPR), subject to statutory retention obligations
+  - Restrict processing (Art. 18 GDPR)
+  - Data portability (Art. 20 GDPR)
+  - Object to processing carried out on the basis of legitimate interests (Art. 21 GDPR)
+  - Withdraw consent at any time, with effect for the future (Art. 7 (3) GDPR)
+  - Lodge a complaint with a supervisory authority (Art. 77 GDPR)
+
+  Since error reports and template searches are not linked to your name or device, I usually cannot find the entries that belong to you. Tell me what you need, and I will help as far as possible.
+
+  ## 9. Contact
+
+  For any questions about Pikuro and your data, please contact me at niklas.grieger@devnik.dev.
+
+  ## 10. Changes to this Policy
+
+  This privacy policy may be updated when the app or applicable law changes. The most recent version is always available at this URL.
+lastUpdated: 2026-09-27

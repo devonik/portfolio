@@ -164,6 +164,14 @@ export default defineContentConfig({
         lastUpdated: z.date().optional()
       })
     }),
+    pikuroPrivacy: defineCollection({
+      type: 'page',
+      source: 'pikuro-privacy.yml',
+      schema: z.object({
+        content: z.object({}),
+        lastUpdated: z.date().optional()
+      })
+    }),
     legal: defineCollection({
       type: 'page',
       source: 'legal.yml',
