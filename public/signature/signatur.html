@@ -32,8 +32,8 @@ ol{padding-left:20px}
 
 <section><header><h2>So kommt sie in Gmail</h2></header><div class="preview" style="padding-top:8px">
 <ol>
-<li>Die Dateien aus dem Ordner <b>signature</b> (photo.png + icon-*.png) auf devnik.dev hochladen, bei Nuxt einfach nach <code>public/signature/</code>. Anderer Pfad? Oben die URL anpassen.</li>
-<li>Prüfen, dass z.&nbsp;B. <code>https://devnik.dev/signature/photo.png</code> im Browser öffentlich lädt.</li>
+<li>Die Dateien aus dem Ordner <b>signature</b> (photo-v2.png + icon-*.png) auf devnik.dev hochladen, bei Nuxt einfach nach <code>public/signature/</code>. Anderer Pfad? Oben die URL anpassen.</li>
+<li>Prüfen, dass z.&nbsp;B. <code>https://devnik.dev/signature/photo-v2.png</code> im Browser öffentlich lädt.</li>
 <li>Hier auf „Kopieren“ klicken.</li>
 <li>Gmail → Einstellungen → Alle Einstellungen → Signatur → „Neu erstellen“ → ins Feld einfügen (Cmd+V) → unten „Änderungen speichern“.</li>
 <li>Für die zweite Sprache eine zweite Signatur anlegen. Beim Schreiben wechselst du über das Stift-Symbol in der Mail-Leiste.</li>
@@ -66,7 +66,7 @@ ${row('linkedin',`<a href="https://www.linkedin.com/in/niklas-grieger-b98086152"
 </table>`;
 }
 const local=n=>EMBED[n];
-const hosted=n=>{let b=document.getElementById('base').value.trim();if(!b.endsWith('/'))b+='/';return b+(n==='photo'?'photo.png':'icon-'+n+'.png')};
+const hosted=n=>{let b=document.getElementById('base').value.trim();if(!b.endsWith('/'))b+='/';return b+(n==='photo'?'photo-v2.png':'icon-'+n+'.png')};
 for(const l of ['de','en'])document.getElementById('pv-'+l).innerHTML=sig(l,local);
 document.querySelectorAll('button[data-lang]').forEach(btn=>btn.addEventListener('click',async()=>{
  const html=sig(btn.dataset.lang,hosted),stage=document.getElementById('stage');
