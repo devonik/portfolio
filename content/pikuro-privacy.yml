@@ -16,7 +16,7 @@ content: |
 
   - Your photos and videos **stay on your phone**. Pikuro never uploads, copies to a server or analyzes them anywhere but on your device.
   - There is **no account, no advertising and no tracking**. Pikuro does not sell or share data for advertising.
-  - Pikuro only sends data in three cases: when you search for CapCut templates, when something goes wrong (error reports), and when it checks for app updates. Each is described below.
+  - Pikuro only sends data in four cases: when you search for CapCut templates, when something goes wrong (error reports), when it checks for app updates, and when it shows a video about a new feature. Each is described below.
 
   ## 3. Your Photos and Videos
 
@@ -58,6 +58,12 @@ content: |
 
   Legal basis: our legitimate interest in keeping the app working and secure (Art. 6 (1) lit. f GDPR).
 
+  ### 4.5 Videos about new features
+
+  After an update, the **What's new** screen can show short videos about new features. They are loaded from Pikuro's website (pikuro.app, hosted by Vercel Inc., USA): a preview image when the screen opens, the video only when you tap it. As with any web request, the hosting provider briefly processes your IP address in its server logs. No personal content is sent.
+
+  Legal basis: our legitimate interest in explaining new features (Art. 6 (1) lit. f GDPR).
+
   ## 5. Google Play
 
   Pikuro is distributed through Google Play. Google processes data about your download and installation under its own [privacy policy](https://policies.google.com/privacy).
@@ -92,4 +98,4 @@ content: |
   ## 10. Changes to this Policy
 
   This privacy policy may be updated when the app or applicable law changes. The most recent version is always available at this URL.
-lastUpdated: 2026-09-27
+lastUpdated: 2026-10-04
