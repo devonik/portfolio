@@ -60,7 +60,7 @@ content: |
 
   ### 4.5 Videos about new features
 
-  After an update, the **What's new** screen can show short videos about new features. They are loaded from Pikuro's website (pikuro.app, hosted by Vercel Inc., USA): a preview image when the screen opens, the video only when you tap it. As with any web request, the hosting provider briefly processes your IP address in its server logs. No personal content is sent.
+  After an update, the **What's new** screen can show short videos about new features. A video is only loaded when you tap **Watch video**; it then comes from Pikuro's website (pikuro.app, hosted by Vercel Inc., USA). As with any web request, the hosting provider briefly processes your IP address in its server logs. No personal content is sent.
 
   Legal basis: our legitimate interest in explaining new features (Art. 6 (1) lit. f GDPR).
 
