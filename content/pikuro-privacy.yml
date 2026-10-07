@@ -42,7 +42,7 @@ content: |
 
   ### 4.2 Error reports
 
-  If the app crashes or runs into an error, it sends a technical report to Sentry (Functional Software, Inc., USA; data stored in the EU, Frankfurt). A report contains the error and where in the app's code it happened, the app version, your phone's model and operating system version, and the steps in the app shortly before the error (for example which screen was open). Reports never contain your photos or videos and are not linked to your name or an account. Sentry deletes them after 30 days at the latest.
+  If the app crashes or runs into an error, it sends a technical report to Sentry (Functional Software, Inc., USA; data stored in the EU, Frankfurt). A report contains the error and where in the app's code it happened, the app version, your phone's model and operating system version, and the steps in the app shortly before the error (for example which screen was open, or the type, pixel size and length of the photo or video shown — never the photo or video itself). Reports never contain your photos or videos and are not linked to your name or an account. Sentry deletes them after 30 days at the latest.
 
   Legal basis: our legitimate interest in finding and fixing errors (Art. 6 (1) lit. f GDPR).
 
