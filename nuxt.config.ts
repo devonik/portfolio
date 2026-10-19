@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   site: {
     url: process.env.NUXT_SITE_URL || 'https://devnik.dev',
     name: process.env.NUXT_SITE_NAME || 'Niklas Grieger',
-    description: 'Senior Full Stack Engineer specializing in Vue, Nuxt, Node.js & AWS. Available for remote freelance.',
+    description: 'Senior Full Stack Engineer specialized in Vue/Nuxt, Node.js and AWS. Builds with AI agents, spec first. Available for remote freelance.',
     defaultLocale: 'en'
   },
   runtimeConfig: {

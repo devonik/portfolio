@@ -5,9 +5,15 @@ defineProps<{
   page: IndexCollectionItem
 }>()
 
-const { data: posts } = await useAsyncData('index-blogs', () =>
-  queryCollection('blog').order('date', 'DESC').limit(3).all()
-)
+const { data: posts } = await useAsyncData('index-blogs', async () => {
+  const featured = await queryCollection('blog').where('featured', '=', true).order('date', 'DESC').all()
+  const latest = await queryCollection('blog').order('date', 'DESC').limit(3 + featured.length).all()
+  const featuredPaths = new Set(featured.map(post => post.path))
+  return [
+    ...featured.map(post => ({ ...post, badge: { label: 'Featured', color: 'primary' as const, variant: 'subtle' as const } })),
+    ...latest.filter(post => !featuredPaths.has(post.path)).slice(0, 3)
+  ]
+})
 if (!posts.value) {
   throw createError({ statusCode: 404, statusMessage: 'blogs posts not found', fatal: true })
 }

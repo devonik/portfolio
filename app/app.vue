@@ -31,6 +31,7 @@ useSchemaOrg([
     name: 'Niklas Grieger',
     image: '/profile.jpg',
     jobTitle: 'Senior Full Stack Engineer',
+    knowsAbout: ['TypeScript', 'Vue.js', 'Nuxt', 'React', 'Next.js', 'Node.js', 'AWS', 'PostgreSQL', 'GraphQL', 'Claude Code', 'Spec-driven development'],
     email: 'niklas.grieger@devnik.dev',
     url: 'https://devnik.dev',
     sameAs: [
@@ -42,7 +43,7 @@ useSchemaOrg([
   }),
   defineWebSite({
     name: 'Niklas Grieger',
-    description: 'Senior Full Stack Engineer specializing in Vue, Nuxt, Node.js & AWS. Available for remote freelance.'
+    description: 'Senior Full Stack Engineer specialized in Vue/Nuxt, Node.js and AWS. Builds with AI agents, spec first. Available for remote freelance.'
   }),
   defineWebPage()
 ])

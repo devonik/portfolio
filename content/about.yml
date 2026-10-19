@@ -1,16 +1,22 @@
 seo:
   title: "About · Niklas Grieger | Senior Full Stack Engineer"
-  description: "Senior Full Stack Engineer with 8+ years of experience. Vue & Nuxt specialist, remote-first, currently traveling South America as a digital nomad."
+  description: "Senior Full Stack Engineer and Vue/Nuxt specialist with 8+ years of architecture work. I build with AI agents, spec first. Remote-first, in South America."
 title: About Me
-description: Senior Full Stack Engineer with 8+ years of experience building scalable web applications — from architecture to deployment.
+description: "Senior Full Stack Engineer and Vue/Nuxt specialist, building with AI agents: structure first, then code."
 content: |
-  Hello 👋 I'm Niklas, a Senior Full Stack Engineer with 8+ years of experience building scalable web applications — from architecture to deployment.
-
+  Hello 👋 I’m Niklas.
+  <br><br>
+  I’m a Senior Full Stack Engineer with 8+ years of experience, specialized in Vue/Nuxt and certified in Vue.js and React. At Heiland I led the split of a monolithic Node.js backend into 20+ Lambda functions and 4 Beanstalk microservices, built an event-driven cashback payout system for 1,500+ veterinary practices, a multi-tenant booking tool and a Vue 3/Nuxt 3 frontend split, and mentored 2 junior developers.
+  <br><br>
+  I build with AI agents, spec first: I define the structure, the agent writes code inside it, and I review the result against the requirements. New products start with GitHub Spec Kit, existing codebases with OpenSpec. On NearAsk, a mobile app that finds local shops for a specific product, I talked through open questions with Claude, researched third-party providers and wrote the decisions down as specs before any code existed. Many problems showed up there, where fixing them cost a conversation instead of a rewrite.
+  <br><br>
+  Maintenance runs the same way. On Kinderleicht, a booking platform for a family-course studio, a nightly Claude routine takes labeled GitHub issues and opens pull requests, and every morning I review each PR against its ticket’s requirements. Here’s [one maintenance session in detail](/blog/agent-maintenance-session).
+  <br><br>
   I work **remote-first** and I'm currently traveling through **South America** as a digital nomad. That puts me in flexible timezones — convenient overlap with both **European and Americas** client hours, so async-friendly collaboration just works.
 
   ### My Philosophy
 
-  My philosophy is rooted in **understanding the problem before touching the code**. I believe great engineering starts with understanding the 'why' — the business need, the user's pain point, or the architectural constraint — before jumping to solutions.
+  My philosophy is rooted in **understanding the problem before touching the code**. I believe great engineering starts with understanding the 'why' — the business need, the user's pain point, or the architectural constraint — before jumping to solutions. That’s also why I write specs before an agent writes code: the thinking happens up front, where changing your mind is cheap.
   <br><br>
   I strive to write **clean, maintainable code** that not only solves today's problem but doesn't become tomorrow's tech debt. I follow established patterns and best practices, but I'm pragmatic — the goal is working software, not perfect abstractions.
 

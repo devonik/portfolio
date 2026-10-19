@@ -1,6 +1,6 @@
 title: Course Booking Platform for a Family-Education Studio
 description: |
-  Built a booking website for Kinderleicht, a family-course studio in Hannover, replacing a website builder with real online booking and payment. Course catalogue with a live free-seat count read from Postgres on every request, a booking form with per-consent tracking and a database CHECK constraint enforcing GDPR Article 9 consent before any health data is stored, Stripe Checkout on the client's own account, minimum-participant cancel/merge logic, and a read-only participant overview for the owner. Public content lives in Storyblok and is fully client-maintained; bookings and participant data are isolated in Postgres. Solo build, about two months from empty repo to live production.
+  Built a booking website for Kinderleicht, a family-course studio in Hannover, replacing a website builder with real online booking and payment. Course catalogue with a live free-seat count read from Postgres on every request, a booking form with per-consent tracking and a database CHECK constraint enforcing GDPR Article 9 consent before any health data is stored, Stripe Checkout on the client's own account, minimum-participant cancel/merge logic, and a read-only participant overview for the owner. Public content lives in Storyblok and is fully client-maintained; bookings and participant data are isolated in Postgres. Solo build, about two months from empty repo to live production. Maintained with a nightly Claude routine that turns labeled GitHub issues into pull requests, which I review each morning against the ticket requirements.
 image: /hero/project-kinderleicht.png
 type: client
 period: "07/2026 — present"
@@ -36,4 +36,4 @@ tech:
     icon: "i-simple-icons-vercel"
 date: "2026"
 url: "https://kinderleicht-hannover.de/"
-relatedBlog: "/blog/storyblok-wordpress-alternative"
+relatedBlog: "/blog/agent-maintenance-session"

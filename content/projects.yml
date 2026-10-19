@@ -1,8 +1,8 @@
 seo:
-  title: "Projects · Niklas Grieger | Full Stack Engineer"
-  description: "A selection of SaaS platforms, B2B web apps, AI-powered products and mobile apps built by Niklas Grieger — Senior Full Stack Engineer."
+  title: "Projects · Niklas Grieger | Senior Full Stack Engineer"
+  description: "Vue/Nuxt and React/Next.js projects, from monolith-to-microservices migrations to spec-first builds with AI agents. SaaS, B2B and mobile, by Niklas Grieger."
 title: Selected Work
-description: A selection of SaaS platforms, B2B web apps, AI-powered products and mobile apps I've shipped to production. Each one represents a real engineering challenge — from migrating monoliths to integrating AI.
+description: A selection of SaaS platforms, B2B web apps, AI-powered products and mobile apps, shipped to production or in development. Each one is a real engineering problem, from migrating monoliths to building spec-first with AI agents.
 links:
   - label: "Let's talk"
     color: "neutral"

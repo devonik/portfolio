@@ -4,6 +4,7 @@ description: 75 commits, 141 tests, and a schema tool that's banned from the pro
 date: 2026-08-18
 image: /blog/agent-maintenance-session-hero.png
 minRead: 7
+featured: true
 author:
   name: Niklas Grieger
   avatar:

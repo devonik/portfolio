@@ -1,8 +1,8 @@
 seo:
-  title: "Niklas Grieger · Full Stack Engineer · Vue, React, Node, AWS"
-  description: "Full Stack Engineer · Vue, React, Node.js & AWS · 8+ years shipping web apps and AI-powered products. Freelance available."
-title: "I turn complex problems into clean, scalable code."
-description: "Senior Full Stack Engineer specializing in Vue/Nuxt, Node.js, and AWS. I've migrated monoliths to microservices, rebuilt legacy frontends, and shipped AI-powered products — all remotely, all to production. Currently available."
+  title: "Niklas Grieger · Senior Vue & Full Stack Engineer, AI-native"
+  description: "Senior Vue/Nuxt and Full Stack Engineer with 8+ years in Node.js and AWS. I build with AI agents, spec first, and review the result against the requirements."
+title: "I design the architecture. AI agents build inside it."
+description: "Senior Full Stack Engineer with 8+ years, specialized in Vue/Nuxt, plus React/Next.js, Node.js and AWS. I’ve migrated monoliths to microservices, rebuilt legacy frontends and shipped AI-powered products, all remote and all to production. Today I build with AI agents, spec first: I define the structure, the agent writes the code, and I review it against the requirements. Currently available."
 hero:
   links:
     - label: View My Work
@@ -10,6 +10,16 @@ hero:
       color: neutral
   carouselLabel: "Selected projects from the last 8 years"
   images:
+    - src: /hero/project-nearask.png
+      alt: Project NearAsk
+    - src: /hero/project-pikuro.png
+      alt: Project Pikuro
+    - src: /hero/project-arsipa.png
+      alt: Project Arsipa
+    - src: /hero/project-kinderleicht.png
+      alt: Project Kinderleicht
+    - src: /blog/wordpress-to-strapi.png
+      alt: Project AWARE7
     - src: /hero/project-ai-think.png
       alt: Project AI Think
     - src: /hero/project-rosypet.png
@@ -37,7 +47,11 @@ hero:
 about:
   title: "About Me"
   description: |
-    Senior Full Stack Engineer with 8+ years of experience building scalable web apps, AI-powered products, and mobile apps — from architecture to deployment. Remote-first, async-friendly, currently available.
+    I’m a Senior Full Stack Engineer with 8+ years of experience, specialized in Vue/Nuxt and certified in Vue.js and React. At Heiland I led the split of a monolithic Node.js backend into 20+ Lambda functions and 4 Beanstalk microservices, built an event-driven cashback payout system for 1,500+ veterinary practices, a multi-tenant booking tool and a Vue 3/Nuxt 3 frontend split, and mentored 2 junior developers.
+
+    I build with AI agents, spec first: I define the structure, the agent writes code inside it, and I review the result against the requirements. New products start with GitHub Spec Kit, existing codebases with OpenSpec. On NearAsk, a mobile app that finds local shops for a specific product, I talked through open questions with Claude, researched third-party providers and wrote the decisions down as specs before any code existed. Many problems showed up there, where fixing them cost a conversation instead of a rewrite.
+
+    Maintenance runs the same way. On Kinderleicht, a booking platform for a family-course studio, a nightly Claude routine takes labeled GitHub issues and opens pull requests, and every morning I review each PR against its ticket’s requirements.
 experience:
   title: Work Experience
   items:
@@ -143,7 +157,7 @@ testimonials:
         srcset: '/hero/testimonial-pascal-bolten.jpeg'
 blog:
   title: "Latest Articles"
-  description: "Some of my recent thoughts"
+  description: "A featured case study and my latest articles."
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about my process and services.
@@ -152,20 +166,26 @@ faq:
       questions:
         - label: What kind of projects do you take on?
           content: |
-            I work on web applications, SaaS platforms, B2B products, and AI-powered tools — end-to-end. That means I can own the full stack: frontend, backend, infrastructure, and deployment.
+            I work on web applications, SaaS platforms, B2B products and AI-powered tools, end-to-end. That means I can own the full stack: frontend, backend, infrastructure and deployment.
 
             Typical engagements include:
-            - Building new products from scratch (Vue/Nuxt + Node.js/NestJS + AWS)
-            - Vue 2 → Vue 3 / Nuxt migrations
-            - Monolith → microservices decomposition
+            - New products, built spec-first with AI agents (Vue/Nuxt or React/Next.js, Node.js, AWS)
+            - Ongoing feature work and maintenance on existing codebases, with specs and reviewed agent PRs
+            - Vue 2 to Vue 3 / Nuxt migrations
+            - Monolith to microservices decomposition
             - Integrating AI/LLM capabilities into existing products
-            - WordPress → Headless CMS migrations
+            - WordPress to headless CMS migrations
             - Mobile apps with React Native
         - label: How do you typically work with clients?
           content: |
-            I work fully remote and async-first. Most of my clients are in Europe or the Americas — my timezone flexibility as a digital nomad means I can overlap with both.
+            I work fully remote and async-first. Most of my clients are in Europe or the Americas, and my timezone flexibility as a digital nomad means I can overlap with both.
 
-            In practice: I integrate into your existing workflow (GitHub/GitLab, Linear, Jira, Slack), communicate proactively, and don't need hand-holding to get started. I'm used to being the only external engineer on a team, or embedded in a larger dev team.
+            In practice: I integrate into your existing workflow (GitHub/GitLab, Linear, Jira, Slack), communicate proactively and don’t need hand-holding to get started. I’m used to being the only external engineer on a team, or embedded in a larger dev team.
+
+            With AI agents, my architecture experience decides what goes into the specs: service boundaries, data model, failure cases. The agent writes code inside them, and I review the result against those requirements. That keeps the speed of an agent and the judgment of a senior engineer.
+        - label: Isn’t building with AI agents just vibe coding?
+          content: |
+            Vibe coding means prompting until something runs. My order is different: first the structure, as specs with decisions, constraints and acceptance criteria, then the agent writes code inside that frame, then I review it against the requirements. New products start with GitHub Spec Kit, existing codebases with OpenSpec. Eight years of architecture work is what lets me write those specs and judge the result.
         - label: Do you work as a contractor or project-based?
           content: |
             Both. I operate through my US LLC (Devnik LLC), which makes invoicing straightforward for international clients.
@@ -192,22 +212,24 @@ faq:
         - label: What is your primary tech stack?
           content: |
             **Frontend**
-            Vue.js (2 & 3), Nuxt.js, TypeScript, Pinia, Vuetify, TailwindCSS, React, React Native
+            Vue.js (2 & 3), Nuxt, TypeScript, Pinia, Vuetify, TailwindCSS, React, Next.js, React Native, Storybook
+
+            **AI & Workflow**
+            Claude Code (daily), GitHub Spec Kit, OpenSpec, custom MCP server, Claude skills, OpenAI API, DeepSeek LLM (self-hosted), Crawl4AI
 
             **Backend**
-            Node.js, NestJS, Java Spring Boot, REST APIs, GraphQL
+            Node.js, NestJS, Java Spring Boot, REST APIs, GraphQL, Algolia
 
             **Cloud & DevOps**
             AWS (Lambda, EC2, Beanstalk, S3, OpenSearch, API Gateway, Cognito, EventBridge, SNS/SQS, CDK), Docker, Kubernetes, Terraform, GitLab CI/CD
 
             **Databases**
             PostgreSQL, Redis, Supabase, DynamoDB
-
-            **AI & Tooling**
-            Claude Code, DeepSeek LLM (self-hosted), OpenAI API, Crawl4AI, Algolia, Storybook
         - label: Can you handle both frontend and backend?
           content: |
-            Yes — this is actually one of my main strengths. I've spent 8+ years working across the full stack, which means I can own features end-to-end without creating handoff friction between frontend and backend. I'm most specialized in Vue/Nuxt on the frontend and Node.js/NestJS on the backend, with solid Java Spring Boot experience for enterprise contexts.
+            Yes, this is one of my main strengths. I’ve spent 8+ years across the full stack, so I can own features end-to-end without handoff friction. On the frontend I specialize in Vue/Nuxt (Vue.js Senior certified), with React/Next.js as my second stack (React Senior certified). On the backend I work with Node.js/NestJS and AWS, including monolith-to-microservices splits, event-driven systems and multi-tenant apps, plus Java Spring Boot for enterprise contexts. That breadth is also what makes agent-written code reviewable: I can judge every layer it touches.
         - label: Do you have experience with AI integrations?
           content: |
-            Yes, hands-on. I've built an embeddable AI avatar chat plugin (users upload PDFs, an AI avatar speaks the answers), set up a self-hosted DeepSeek LLM on AWS EC2 as a cost-efficient ChatGPT alternative, built an automated web crawling pipeline with AI-assisted data extraction, and I use Claude Code daily in my development workflow.
+            Yes, hands-on. In products, I’ve built an embeddable AI avatar chat plugin (users upload PDFs, an AI avatar speaks the answers), set up a self-hosted DeepSeek LLM on AWS EC2 as a cost-efficient ChatGPT alternative and built an automated web crawling pipeline with AI-assisted data extraction.
+
+            On the development side, Claude Code is my main tool every day. I’ve built my own MCP server and Claude skills (see [How Claude Skills + MCP Track My Capital Gains Tax](/blog/capital-gains-tracker-claude-skills-mcp)), and I run a nightly Claude routine that turns labeled GitHub issues into pull requests for review.

@@ -5,7 +5,7 @@ period: "08/2026 — present"
 highlights:
   - "Led the migration of the monorepo (10 apps, shared component layer) from Nuxt 3 to Nuxt 4, including Tailwind CSS 3 to 4 and Storybook 10."
   - "Cut initial JavaScript by 67% (9.1 to 3.0 MB) and CSS by 50% by moving globally loaded libraries to on-demand loading. Time-to-content improved by up to 35% with a pixel-identical UI, verified by automated Playwright before/after measurements."
-  - "Consolidated about 20 duplicated admin CRUD screens into a generic, typed layout layer, removing 8,200 lines net. New admin screens now take about 300 lines instead of about 1,000."
+  - "Consolidated about 20 duplicated admin CRUD screens into a generic, typed layout layer, removing 8,200 lines net."
 image: /hero/project-arsipa.png
 type: client
 tags: ["Full-Stack Dev"]
