@@ -12,9 +12,11 @@ author:
     alt: Niklas Grieger
 ---
 
+> **Update, October 2026:** This describes the project seven weeks in, before launch. The site went live in September 2026 with online payment through Stripe. Within the first hour, eight paid bookings came in, each with its confirmation email already sent ([launch post on LinkedIn](https://lnkd.in/p/ek7XYCwe)). Maintenance with the nightly routine continues.
+
 ## The project
 
-Kinderleicht is a booking site for family courses - pregnancy, baby, toddler classes - in Hannover, built for a client as an unpaid portfolio project. Next.js 16 App Router, Storyblok for content, Postgres via Drizzle for anything sensitive, Resend for mail, Stripe prepared but not connected yet, Vercel hosting.
+Kinderleicht is a booking site for family courses - pregnancy, baby, toddler classes - in Hannover, built for a client. Next.js 16 App Router, Storyblok for content, Postgres via Drizzle for anything sensitive, Resend for mail, Stripe prepared but not connected yet, Vercel hosting.
 
 Seven weeks in: 75 commits, 20 issues (13 still open), 18 merged PRs, 141 tests across 12 files, 3 SQL migrations applied by hand, one at a time, per environment, on purpose.
 
