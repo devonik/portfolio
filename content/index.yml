@@ -42,7 +42,15 @@ experience:
   title: Work Experience
   items:
     - position: "Senior Full Stack Developer at"
-      date: "12 2025 — present"
+      date: "08 2026 — present"
+      company:
+        name: Arsipa
+    - position: "Senior Full Stack Developer at"
+      date: "07 2026 — present"
+      company:
+        name: Kinderleicht
+    - position: "Senior Full Stack Developer at"
+      date: "12 2025 — 06 2026"
       company:
         name: AIThink UG
     - position: "Senior Full Stack Developer at"

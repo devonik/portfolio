@@ -81,9 +81,19 @@ useSeoMeta({
             }"
           >
             <template #leading>
-              <span class="text-sm text-muted block text-center">
-                {{ new Date(project.date).getUTCFullYear() }}
-              </span>
+              <div class="flex items-center justify-center gap-2">
+                <span class="text-sm text-muted">
+                  {{ project.period || new Date(project.date).getUTCFullYear() }}
+                </span>
+                <UBadge
+                  v-if="project.type"
+                  :label="project.type === 'client' ? 'Client project' : 'Private project'"
+                  :icon="project.type === 'client' ? 'i-lucide-briefcase' : 'i-lucide-user'"
+                  :color="project.type === 'client' ? 'primary' : 'neutral'"
+                  variant="soft"
+                  size="sm"
+                />
+              </div>
             </template>
             <template #footer>
               <div class="flex items-center justify-center gap-4">
@@ -128,6 +138,17 @@ useSeoMeta({
               :alt="project.title"
               class="object-contain w-full max-h-80 rounded-lg mx-auto"
             >
+            <ul
+              v-if="project.highlights?.length"
+              class="mt-4 mx-auto max-w-2xl list-disc pl-5 space-y-1 text-left text-sm text-muted"
+            >
+              <li
+                v-for="item in project.highlights"
+                :key="item"
+              >
+                {{ item }}
+              </li>
+            </ul>
             <div
               v-if="project.tech?.length"
               class="mt-4 flex flex-wrap justify-center gap-2"

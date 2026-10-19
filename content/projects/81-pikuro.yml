@@ -1,0 +1,36 @@
+title: Pikuro – Android app for sorting your camera roll
+description: |
+  Pikuro is an Android app for sorting your camera roll. Swipe left to delete, right to keep, up to put a photo into an album. It finds photo series so you can keep the best shot, and it clears out screenshots and old WhatsApp media. It can then suggest a CapCut video template whose clip count matches the album, a filter CapCut's own search doesn't have. Your photos stay on the device and nothing is deleted until you confirm, with no account, ads or subscription.
+type: private
+period: "09/2026 — present · Beta"
+highlights:
+  - "Wrote and published the npm package expo-saf-scan, which lists WhatsApp's media folders through Android's Storage Access Framework. It scanned 15,733 files in about 27 s on a real device (debug build)."
+  - "Found two bugs in expo-media-library and fixed them upstream in Expo (expo/expo #50621, #50817)."
+  - "Turned on R8 code shrinking, which cut the app code (dex) in the release APK from 58 MB to 20 MB."
+image: /hero/project-pikuro.png
+tags: ["Mobile Dev"]
+tech:
+  - name: "Expo"
+    icon: "i-simple-icons-expo"
+  - name: "React Native"
+    icon: "i-simple-icons-react"
+  - name: "TypeScript"
+    icon: "i-simple-icons-typescript"
+  - name: "SQLite"
+    icon: "i-simple-icons-sqlite"
+  - name: "Drizzle"
+    icon: "i-simple-icons-drizzle"
+  - name: "Zustand"
+    icon: "i-lucide-box"
+  - name: "NativeWind"
+    icon: "i-simple-icons-tailwindcss"
+  - name: "Sentry"
+    icon: "i-simple-icons-sentry"
+  - name: "Next.js"
+    icon: "i-simple-icons-nextdotjs"
+  - name: "Neon"
+    icon: "i-lucide-database"
+  - name: "Maestro"
+    icon: "i-lucide-test-tube"
+date: "2026"
+url: "https://pikuro.app"

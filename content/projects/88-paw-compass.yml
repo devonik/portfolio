@@ -2,6 +2,7 @@ title: Website for a perfect pet match
 description: |
   This website helps people find their perfect pet match. The main feature is a quiz with 10 questions, covering things like the visitor's living situation, that produces a match. We support local shelters by showing their pets on the site.
 image: /hero/project-paw-compass.mp4
+type: private
 tags: ["Full-Stack Dev"]
 tech:
   - name: "React"

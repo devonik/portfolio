@@ -97,6 +97,9 @@ export default defineContentConfig({
         image: z.string().nonempty().editor({ input: 'media' }),
         url: z.string().optional(),
         relatedBlog: z.string().optional(),
+        type: z.enum(['client', 'private']).optional(),
+        period: z.string().optional(),
+        highlights: z.array(z.string()).optional(),
         tags: z.array(z.string()),
         tech: z.array(z.object({
           name: z.string().nonempty(),

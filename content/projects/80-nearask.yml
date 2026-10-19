@@ -1,0 +1,39 @@
+title: NearAsk – find local shops and ask them via WhatsApp
+description: |
+  A mobile app for finding local shops that might carry a specific product and asking them about it. AI turns the product into a list of fitting shop types, the app collects nearby shops of those types, and one tap opens WhatsApp with a ready-made message in the local language. Built spec-first with GitHub Spec Kit and Claude Code.
+type: private
+period: "10/2026 — present · In development"
+highlights:
+  - "One AI call per search picks shop types from a fixed list of 515 Open Places categories and writes the message template. If a provider fails or takes longer than 4 s, the next one takes over: with the first provider broken, the fallback still answered 20 of 20 searches."
+  - "Two shop sources are searched in parallel and merged, with duplicates matched by ID or by name within 100 m. In measured searches the 90th-percentile response time was 1.2 s, and all 409 phone numbers could be used for WhatsApp."
+  - "Spec-first workflow: 7 features each went through the Spec Kit steps (specify, clarify, plan, tasks, implement) under a versioned project constitution, each with its own folder for research, contracts and tasks."
+image: /hero/project-nearask.png
+tags: ["Mobile Dev"]
+tech:
+  - name: "Expo"
+    icon: "i-simple-icons-expo"
+  - name: "React Native"
+    icon: "i-simple-icons-react"
+  - name: "TypeScript"
+    icon: "i-simple-icons-typescript"
+  - name: "Gemini"
+    icon: "i-simple-icons-googlegemini"
+  - name: "Google Places"
+    icon: "i-simple-icons-googlemaps"
+  - name: "WhatsApp"
+    icon: "i-simple-icons-whatsapp"
+  - name: "Zustand"
+    icon: "i-lucide-box"
+  - name: "NativeWind"
+    icon: "i-simple-icons-tailwindcss"
+  - name: "Sentry"
+    icon: "i-simple-icons-sentry"
+  - name: "Vitest"
+    icon: "i-simple-icons-vitest"
+  - name: "Maestro"
+    icon: "i-lucide-test-tube"
+  - name: "GitHub Spec Kit"
+    icon: "i-simple-icons-github"
+  - name: "Claude Code"
+    icon: "i-simple-icons-claude"
+date: "2026"

@@ -2,6 +2,7 @@ title: Senior Vue.js Developer
 description: |
   Supported Smart Agency as a Senior Vue Developer for 4 months to get them ready for their production launch. The product asks the user a set of questions and generates a production-ready website powered by OpenAI. The team was around 80 people, working in a Turborepo monorepo.
 image: /hero/project-smart-agency.mp4
+type: client
 tags: ["Front-End Dev"]
 tech:
   - name: "Vue"

@@ -2,12 +2,20 @@ title: Course Booking Platform for a Family-Education Studio
 description: |
   Built a booking website for Kinderleicht, a family-course studio in Hannover, replacing a website builder with real online booking and payment. Course catalogue with a live free-seat count read from Postgres on every request, a booking form with per-consent tracking and a database CHECK constraint enforcing GDPR Article 9 consent before any health data is stored, Stripe Checkout on the client's own account, minimum-participant cancel/merge logic, and a read-only participant overview for the owner. Public content lives in Storyblok and is fully client-maintained; bookings and participant data are isolated in Postgres. Solo build, about two months from empty repo to live production.
 image: /hero/project-kinderleicht.png
+type: client
+period: "07/2026 — present"
+highlights:
+  - "Health data (GDPR Art. 9) lives in Postgres, separate from the CMS. A daily Vercel cron job deletes it 30 days after the last course session and anonymizes paid bookings after the 8-year tax retention period."
+  - "Stripe Checkout sits behind a server-side feature flag, so the site could launch before payments did. Webhooks are handled idempotently, including asynchronous payment methods, and a refund in Stripe cancels the booking automatically."
+  - "The client maintains courses, sessions, pages and the cancellation policy in Storyblok's Visual Editor, and refund thresholds are CMS fields rather than hardcoded rules. CMS content is cached, while remaining seats are always read live from the database."
 tags: ["Full-Stack Dev"]
 tech:
   - name: "Next.js"
     icon: "i-simple-icons-nextdotjs"
   - name: "TypeScript"
     icon: "i-simple-icons-typescript"
+  - name: "Tailwind CSS 4"
+    icon: "i-simple-icons-tailwindcss"
   - name: "Storyblok"
     icon: "i-simple-icons-storyblok"
   - name: "Postgres"
@@ -20,6 +28,10 @@ tech:
     icon: "i-simple-icons-stripe"
   - name: "Resend"
     icon: "i-simple-icons-resend"
+  - name: "Zod"
+    icon: "i-simple-icons-zod"
+  - name: "Vitest"
+    icon: "i-simple-icons-vitest"
   - name: "Vercel"
     icon: "i-simple-icons-vercel"
 date: "2026"

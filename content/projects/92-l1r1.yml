@@ -2,6 +2,7 @@ title: Senior Full Stack Developer
 description: |
   Supported L1R1 for 3 months as a Senior Full Stack Developer. The product lets users upload any kind of invoice, which is scanned via OpenAI with fields detected automatically. After some calculations, the user can push the cleaned invoice into financial software such as Billomat or InvoiceNinja. I also improved team processes, reworking the branching strategy and adding a shared ESLint config for better collaboration.
 image: /hero/project-l1r1.mp4
+type: client
 tags: ["Full-Stack Dev"]
 tech:
   - name: "Vue"

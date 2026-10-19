@@ -2,6 +2,7 @@ title: Senior Full Stack Developer
 description: |
   Supported AI Think as a Senior Full Stack Developer from December 2025 to June 2026. Their main product is the AI-VI Studio, which lets companies create their own AI video bots quickly and without heavy tech overhead. My work covered frontend and backend maintenance plus new feature development, and I built the plugin that lets users embed the AI Avatar Chat in any website, including WordPress.
 image: /hero/project-ai-think.mp4
+type: client
 tags: ["Full-Stack Dev"]
 tech:
   - name: "Vue"
