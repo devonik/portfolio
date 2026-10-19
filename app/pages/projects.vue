@@ -14,6 +14,24 @@ const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection('projects').all()
 })
 
+const route = useRoute()
+const router = useRouter()
+
+const filter = computed({
+  get: () => ['client', 'private'].includes(route.query.type as string) ? route.query.type as string : 'all',
+  set: value => router.replace({ query: { ...route.query, type: value === 'all' ? undefined : value } })
+})
+
+const filterItems = computed(() => [
+  { label: `All (${projects.value?.length ?? 0})`, value: 'all' },
+  { label: `Client projects (${projects.value?.filter(p => p.type === 'client').length ?? 0})`, value: 'client', icon: 'i-lucide-briefcase' },
+  { label: `Private projects (${projects.value?.filter(p => p.type === 'private').length ?? 0})`, value: 'private', icon: 'i-lucide-user' }
+])
+
+const filteredProjects = computed(() => filter.value === 'all'
+  ? projects.value
+  : projects.value?.filter(project => project.type === filter.value))
+
 const { global } = useAppConfig()
 
 useSeoMeta({
@@ -58,8 +76,16 @@ useSeoMeta({
         container: '!pt-0'
       }"
     >
+      <UTabs
+        v-model="filter"
+        :items="filterItems"
+        :content="false"
+        color="neutral"
+        size="sm"
+        class="w-full max-w-xl mx-auto mb-4"
+      />
       <template
-        v-for="(project, index) in projects"
+        v-for="(project, index) in filteredProjects"
         :key="project.title"
       >
         <Motion
@@ -166,7 +192,7 @@ useSeoMeta({
           </UPageCard>
         </Motion>
         <USeparator
-          v-if="projects && index < projects.length - 1"
+          v-if="filteredProjects && index < filteredProjects.length - 1"
           class="my-8"
         />
       </template>
