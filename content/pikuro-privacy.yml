@@ -15,8 +15,8 @@ content: |
   ## 2. In Short
 
   - Your photos and videos **stay on your phone**. Pikuro never uploads, copies to a server or analyzes them anywhere but on your device.
-  - There is **no account, no advertising and no tracking**. Pikuro does not sell or share data for advertising.
-  - Pikuro only sends data in four cases: when you search for CapCut templates, when something goes wrong (error reports), when it checks for app updates, and when it shows a video about a new feature. Each is described below.
+  - There is **no account, no advertising and no tracking of you**. Pikuro does not sell or share data for advertising.
+  - Pikuro only sends data in five cases: when you search for CapCut templates, when something goes wrong (error reports), when it checks for app updates, when it shows a video about a new feature, and once a day as anonymous usage stats, which you can turn off. Each is described below.
 
   ## 3. Your Photos and Videos
 
@@ -64,6 +64,16 @@ content: |
 
   Legal basis: our legitimate interest in explaining new features (Art. 6 (1) lit. f GDPR).
 
+  ### 4.6 Anonymous usage stats (on by default, can be turned off)
+
+  To see which features help and which go unused, Pikuro counts on your phone how often features are used per day — for example how many times you swiped, opened a screen, moved media into albums or opened a template. Once a day, it sends the counts of the previous days to Pikuro's template service (see 4.1), together with the app version and the platform (Android or iOS), and then deletes them from your phone.
+
+  The counts contain **no photos, videos, file names, album names or search topics, and no device identifier**. The service only adds them to totals per day, feature, app version and platform, so a single phone cannot be told apart. As with any web request, the hosting provider briefly processes your IP address in its server logs; it is not stored with the counts.
+
+  You can turn this off at any time in the settings under **Share anonymous usage stats**. Counts not yet sent are then deleted right away.
+
+  Legal basis: our legitimate interest in improving the app (Art. 6 (1) lit. f GDPR); you can object at any time with the setting above.
+
   ## 5. Google Play
 
   Pikuro is distributed through Google Play. Google processes data about your download and installation under its own [privacy policy](https://policies.google.com/privacy).
@@ -89,7 +99,7 @@ content: |
   - Withdraw consent at any time, with effect for the future (Art. 7 (3) GDPR)
   - Lodge a complaint with a supervisory authority (Art. 77 GDPR)
 
-  Since error reports and template searches are not linked to your name or device, I usually cannot find the entries that belong to you. Tell me what you need, and I will help as far as possible.
+  Since error reports, template searches and usage stats are not linked to your name or device, I usually cannot find the entries that belong to you. Tell me what you need, and I will help as far as possible.
 
   ## 9. Contact
 
@@ -98,4 +108,4 @@ content: |
   ## 10. Changes to this Policy
 
   This privacy policy may be updated when the app or applicable law changes. The most recent version is always available at this URL.
-lastUpdated: 2026-10-04
+lastUpdated: 2026-10-28
