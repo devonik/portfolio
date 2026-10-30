@@ -16,7 +16,7 @@ content: |
 
   - Your photos and videos **stay on your phone**. Pikuro never uploads, copies to a server or analyzes them anywhere but on your device.
   - There is **no account, no advertising and no tracking of you**. Pikuro does not sell or share data for advertising.
-  - Pikuro only sends data in five cases: when you search for CapCut templates, when something goes wrong (error reports), when it checks for app updates, when it shows a video about a new feature, and once a day as anonymous usage stats, which you can turn off. Each is described below.
+  - Pikuro only sends data in six cases: when you search for CapCut templates, when something goes wrong (error reports), when you report a problem yourself, when it checks for app updates, when it shows a video about a new feature, and once a day as anonymous usage stats, which you can turn off. Each is described below.
 
   ## 3. Your Photos and Videos
 
@@ -73,6 +73,12 @@ content: |
   You can turn this off at any time in the settings under **Share anonymous usage stats**. Counts not yet sent are then deleted right away.
 
   Legal basis: our legitimate interest in improving the app (Art. 6 (1) lit. f GDPR); you can object at any time with the setting above.
+
+  ### 4.7 Reporting a problem (optional)
+
+  In the settings you can tap **Report a problem** to send me a message. The form sends what you enter — your message and, if you fill them in, your name and email address — to Sentry (see 4.2), together with the same technical information as an error report, which screen you came from, whether Pikuro has access to all or only selected photos, and how many photos and videos are marked in the app (counts only, no file or album names). Name and email are optional; I only use your email address to reply to you. Sentry deletes the report after 30 days at the latest. If you want it deleted earlier, write to me.
+
+  Legal basis: handling your request (Art. 6 (1) lit. b GDPR) and our legitimate interest in fixing problems (Art. 6 (1) lit. f GDPR).
 
   ## 5. Google Play
 
